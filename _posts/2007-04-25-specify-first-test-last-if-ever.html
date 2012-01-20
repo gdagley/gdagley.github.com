@@ -1,0 +1,34 @@
+--- 
+layout: post
+title: Specify First, Test Last (if ever)
+published: true
+meta: {}
+
+tags: 
+- RSpec
+- Rails
+- Ruby
+- Testing
+- Web Applications
+type: post
+status: publish
+---
+<div class="shadow right">
+<img src='http://www.mckinneystation.com/wp-content/uploads/2007/04/locomotive.jpg' alt='Upclose Locomotive' /><span class="credit">
+photo by <a href="http://www.sxc.hu/profile/bjearwicke">bjearwicke</a></span>
+</div>
+
+I have come across a few situations recently where testing is a second class citizen in the development process.  The latest was a job posting where the part of the development environment was described as "testing when possible."  A lot of the larger projects I have worked on have 1 or 2 weeks of testing tacked on to the end of the development cycle.  More times than not, this "testing" time becomes padding for development schedules that overrun.  Besides "you tested as you developed, right?" and "we can't move the delivery date."
+
+I am becoming more and more an advocate of writing automated tests.  This has become even more important when I am the sole developer on a project.  Now you might say to yourself, "If there is no one else to mess up the code, shouldn't everything work?"  It does work.  But as I come across areas of code that need to be refactored, because I am <a href="http://en.wikipedia.org/wiki/Don%27t_repeat_yourself">DRYing up my code</a>, I want to be sure that my changes do not break existing functionality.  Now I could make the changes and then manually try to test all of the possible scenarios, but I usually miss one or two, especially in more complex applications.  This is where the automated tests come in very handy.
+
+<div class="shadow left"><img src='http://www.mckinneystation.com/wp-content/uploads/2007/04/boy_on_tracks.jpg' alt='Boy on Tracks' /><span class="credit">
+photo by <a href="http://www.sxc.hu/profile/mcconnell6">mcconnell6</a></span></div>
+
+Maybe I am thick, but writing tests using <a href="http://www.junit.org">JUnit</a> or <a href="http://www.ruby-doc.org/stdlib/libdoc/test/unit/rdoc/index.html">Test::Unit</a> never seemed natural.  It always seemed to go at the end of my development cycle.  Maybe it was the vocabulary implying that something had to exist to be tested.  Maybe it was the unnatural language of assertions: assertTrue, assertThis, assertThat.  Who talks like that?
+
+Then I came across <a href="http://behaviour-driven.org/">something that encouraged me to write specifications for an application</a> that could then be used after the development was complete to verify that the specifications were met.  All of the sudden I was discussing how the application <em>should</em> behave, which does not imply that the application even exist yet.  This makes sense to me.  I saying things like "this should equal that" or "something should have 5 of these".  It is subtle, but powerful.
+
+So I am now using <a href="http://rspec.rubyforge.org">RSpec</a>, the Ruby implementation of Behaviour Driven Development, for all of my projects.  My latest Rails project has only 6 models and 2 controllers, but has over 200 specs.  I have a better understanding of how the application is supposed to behave.  Combine that with <a href="http://blog.nicksieger.com/articles/2006/11/15/rspec-autotest-now-a-rails-plugin">a way to continously re-run the specifications when the code is changed</a> and I am now a lot more confident that my changes aren't breaking existing functionality. 
+
+Plus, <a href="http://www.robbyonrails.com/articles/2007/02/08/is-bdd-kinkier-than-tdd">it's cooler</a>, right?

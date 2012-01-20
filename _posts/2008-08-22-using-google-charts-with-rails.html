@@ -1,0 +1,84 @@
+--- 
+layout: post
+title: Using Google Charts with Rails
+published: true
+meta: 
+  _edit_last: "1"
+  _edit_lock: "1219428611"
+tags: 
+- Dreamhost
+- GitHub
+- JQuery
+- Projects
+- Rails
+- Ruby
+- Web Applications
+- googlecharts
+- microapps
+type: post
+status: publish
+---
+With one of my recent <a href="/2008/06/03/microapps-encourage-hacking/">microapps</a>, <a href="http://www.unscientificpolls.com">UnscientificPolls.com</a>, I wanted to show the polling data in more interesting ways than just the vote counts.  Charting was the logical conclusion, but how do it was a more difficult decision.
+
+Some of the criteria I had for choosing the charting solution included: ease of use (it is  microapp, of course), compatible with shared hosting environment, fast, easy to customize.
+
+Some of the libraries I looked at included: <a href="http://code.google.com/p/flot/">flot with jquery</a>, <a href="http://nubyonrails.com/pages/gruff">gruff</a>, <a href="http://scruffy.rubyforge.org/">scruffy</a>, <a href="http://nubyonrails.com/pages/sparklines">sparklines</a>, and <a href="http://googlecharts.rubyforge.org/">googlecharts</a>.  I settled on the googlecharts library because I didn't need the interactive features of <code>flot</code> and I didn't want to worry about RMagick needed for <code>gruff</code>, <code>scruffy</code>, or <code>sparklines</code>. 
+
+<h2>Google Charts API</h2>
+
+The <a href="http://code.google.com/apis/chart">Google Charts API</a> is an interesting tool that lets you dynamically generate charts using a "simple" URL scheme.   The usage policy is very generous too: "There's no limit to the number of calls per day you can make to the Google Chart API."
+
+This would allow me to offload the image generation to Google (who supposedly has quite a bit of computing power) and let my application, in a shared hosting environment, focus on collecting votes.
+
+<h2>Enter <em>googlecharts</em></h2>
+
+The challenge with the Google Charts API "simple" url scheme is that it would very tedious to have generate it by concatenating the strings together.  Fortunately, Matt Aimonetti built the <code>googlecharts</code> gem for Ruby.  You can get it from <a href="http://www.rubyforge.org">Rubyforge</a> (<code>gem install googlecharts</code>) or <a href="http://www.github.com">Github</a> (<code>gem install mattetti-googlecharts</code>).  
+
+<h2>Installing <em>googlecharts</em> in my Rails App</h2>
+
+With <code>googlecharts</code> installed on my machine I could start using it, by adding it to my <code>config/environment.rb</code> file.
+
+<pre><code>
+Rails::Initializer.run do |config|
+  config.gem "googlecharts", :lib => "gchart"
+end
+</code></pre>
+
+Since the file we need to include is named "gchart", not "googlecharts", we have to specify the <code>:lib => "gchart"</code> option.
+
+I also didn't want to worry about installing in on the deployment machine, so I unpacked it to the <code>vendor/gems</code> folder using <code>rake gems:unpack</code>.
+
+<h2>Now to the Charts</h2>
+
+Once all that was in place the challenge was getting the data into a format that would be easy to pass to the library.  It turns out, that wasn't too challenging either.
+
+<h3>The Helper</h3>
+
+In my view helper module I created a method that would collect the data needed for the chart.
+
+<pre><code>
+  def pie_chart poll
+    @pie_chart ||= {
+      :data => poll.choices.collect(&:votes_count),
+      :colors => poll.choices.collect {|c| c.winner? ? "264409" : "8A1F11" }
+    }
+  end
+</code></pre>
+
+This just loops over the choices and collects the needed data and puts it in an easy to use Hash.
+
+<h3>The View</h3>
+
+<pre><code>
+    <%= Gchart.pie :size => '240x160', 
+                   :title => 'Vote split',
+                   :data => pie_chart(@poll)[:data],
+                   :bar_colors => pie_chart(@poll)[:colors],
+                   :format => 'image_tag' %>
+</code></pre>
+
+Using googlecharts Gchart made it easy to build the "simple" url needed for a pie chart using the Google Charts API (also supports line, scatter, venn, sparklines, and meter charts)  I didn't even have to add the <img /> tag because I could pass the <code>:format => 'image_tag'</code> and one was generated for me.
+
+<h2>Conclusion</h2>
+
+I was extremely happy with how quick and easy it was to get some simple charts into my application (check them out at <a href="http://www.unscientificpolls.com">UnscientificPolls.com</a>).  The response time from Google seems to be as fast as if the images were stored locally. It also saved me the headache of installing with RMagick.  This is definitely a good fit for simple graphs and charts in a Rails application.

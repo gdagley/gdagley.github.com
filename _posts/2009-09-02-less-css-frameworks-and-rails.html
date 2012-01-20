@@ -1,0 +1,60 @@
+--- 
+layout: post
+title: LESS, CSS Frameworks, and Rails
+published: true
+meta: 
+  _edit_last: "1"
+  _edit_lock: "1251901786"
+tags: 
+- CSS
+- Rails
+- Ruby
+- Web Applications
+- Web Development
+type: post
+status: publish
+---
+I have been a fan of the CSS frameworks for a while now.  I started with <a href="http://developer.yahoo.com/yui/grids/">YUI</a> and now use <a href="http://www.blueprintcss.org/">Blueprint</a> or <a href="http://960.gs/">960.gs</a> on a regular basis.  What I never liked about the frameworks was the need to add all of the extra classes to the HTML markup.  It seemed messy, wasn't <a href="http://en.wikipedia.org/wiki/Semantic_Web">semantic</a> (not that I am a fanatic about that), and made it harder to reuse partials in my Rails projects.
+
+<h2>CSS Improved</h2>
+
+For a while now there has been <a href="http://sass-lang.com/">SASS</a>, which allows you to <a href="http://lab.hamptoncatlin.com/play/with/sass">write CSS-like files that get translated into CSS</a>.  The advantage is that you can now use things like nested rules, variables, mixins, and more.  The markup is similar to CSS so the learning curve is minimal.  On top of that, there is <a href="http://compass-style.org/">Compass</a>, which adds some of the popular CSS frameworks as mixins.  Now it is easy to mixin the styles of the frameworks to your semantic classes in the CSS without adding all of the extra framework specific classes to your HTML markup.
+
+What I did not like about SASS and Compass was the dependency on <a href="http://haml-lang.com/">HAML</a>.  I have tried to make the switch form ERB to HAML and I know that you can use SASS and Compass without using HAML in your templates.  But it always seemed like an extra unneeded dependency in my apps.
+
+<h2>Less CSS</h2>
+
+I recently came across <a href="http://lesscss.org/">LESS</a>, a Ruby gem similar to SASS.  The idea is that you can write <code>.less</code> files that are CSS-like and they will be translated into CSS.  The advantage, as I see it, is that you can use existing <code>.css</code> files as <code>.less</code> files since the syntax is so similar. In addition to the standard CSS syntax, you also get nested rules, variables, and mixins, just like SASS, but without the extra dependency.  You can also import other CSS files as-is, like the CSS frameworks, and mix those styles into your semantic styles.  This eliminates the need for Compass to provide the SASS-ified version of the framework.
+
+The gem itself is not specific to Rails and can be used on any project.  You just need to run the LESS compiler to translate the <code>.less</code> file into a <code>.css</code> file.  There is a <a href="http://github.com/augustl/less-for-rails">Rails plugin</a> that make it easy to start using LESS in your Rails projects.
+
+<h2>LESS In Action</h2>
+
+So what does it all look like?  I will leave you with an example of how it all fits together.
+
+<pre><code>
+@import 'blueprint/screen.css';
+
+#content {
+  .container;
+  .clearfix;
+  #main {
+    .column;
+    .span-18;
+  }
+  #sidebar {
+    .column;
+    .span-6;
+    .last;
+  }
+}
+
+#footer {
+  .container;
+  text-align: center; 
+  font-size: .75em; 
+  color: #666;
+}
+</code></pre>
+
+You can see more in my <a href="http://github.com/gdagley/basejumper">Basejumper, a starter Rails application</a>.

@@ -1,0 +1,172 @@
+--- 
+layout: post
+title: Basejumper - Yet Another Starter Application
+published: true
+meta: 
+  _edit_last: "1"
+  _edit_lock: "1235356695"
+tags: 
+- CSS
+- Development Environment
+- Entrepreneurial
+- Rails
+- Web Applications
+- Web Development
+- microapps
+type: post
+status: publish
+---
+	<p>I do not hide the fact that I like to try out new ideas by <a href="/2008/06/03/microapps-encourage-hacking/">building lots of little applications</a>.  One thing I find myself doing is recreating many of the same pieces for each application.  So I finally gave in and built a default template for the way I like all of my applications to start.  There are <a href="http://www.railsinside.com/elsewhere/100-7-barebones-rails-apps-to-kick-start-your-development-process.html">other starter apps</a>, but this one is tailored to my idiosyncrasies.</p>
+
+
+	<p>You can find the project, Basejumper, at: <a href="http://github.com/gdagley/basejumper">http://github.com/gdagley/basejumper</a></p>
+
+
+	<h2>What is included?</h2>
+
+
+	<h3>Blueprint <span class="caps">CSS</span> (<a href="http://www.bluprintcss.org">http://www.bluprintcss.org</a>)</h3>
+
+
+	<p>Say what you will about <span class="caps">CSS</span> frameworks, but they make my life a lot easier.  From the website, it &#8220;gives you a solid <span class="caps">CSS</span> foundation to build your project on top of, with an easy-to-use grid, sensible typography, and even a stylesheet for printing.&#8221;  There are official plugins for the framework, like &#8220;buttons&#8221; and &#8220;link-icons&#8221;, and other user created ones, like silksprite (<a href="http://www.ajaxbestiary.com/Labs/SilkSprite">http://www.ajaxbestiary.com/Labs/SilkSprite</a>).</p>
+
+
+	<h3>Authlogic (<a href="http://github.com/binarylogic/authlogic">http://github.com/binarylogic/authlogic</a>)</h3>
+
+
+	<p>The way I think authentication should be done.  Instead of copying a lot of authentication logic (encrypting passwords, remember tokens, etc.) into your user model, it is kept in the gem and is easily updatable.  It has lots of configuration options to fit with your authentication needs and some <a href="http://www.binarylogic.com/2008/11/3/tutorial-authlogic-basic-setup">really</a> <a href="http://www.binarylogic.com/2008/11/16/tutorial-reset-passwords-with-authlogic">good</a> <a href="http://www.binarylogic.com/2008/11/21/tutorial-using-openid-with-authlogic">tutorials</a>.</p>
+
+
+In app/models/user.rb
+<pre><code>
+class User < ActiveRecord::Base
+  acts_as_authentic
+end
+</code></pre>
+
+	<h3>Configatron (<a href="http://github.com/markbates/configatron">http://github.com/markbates/configatron</a>)</h3>
+
+
+	<p>This is great way to store application wide configuration and settings.  By adding an initializer to load the config.yml, you can access configuration anywhere in the app.</p>
+
+
+In config/initializers/load_config.rb:
+<pre><code>
+configatron.configure_from_yaml("config/config.yml", :hash => Rails.env)
+</code></pre>
+
+And in config/config.yml
+<pre><code>
+development: &#38;local
+    property1: value1
+    property2: value2
+
+test:
+  <<: *local
+  value2: test_value2
+
+production:
+  <<: *local
+  value2: prod_value2
+</code></pre>
+
+	<h3>Searchlogic (<a href="http://github.com/binarylogic/searchlogic">http://github.com/binarylogic/searchlogic</a>)</h3>
+
+
+	<p>From the same folks who brought you Authlogic, there is Searchlogic.  You will always need pagination.  You may not think so now, but believe me, you will.  So just start out with it enabled.  What I really, really like about Searchlogic, is not just the pagination support, but how easy it makes building advanced search forms (including searching nested objects).  And again, there is a <a href="http://www.binarylogic.com/2008/9/7/tutorial-pagination-ordering-and-searching-with-searchlogic">great tutorial</a></p>
+
+
+	<h3>log-buddy (<a href="http://github.com/relevance/log_buddy">http://github.com/relevance/log_buddy</a>)</h3>
+
+
+	<p>For the lazy debugger in all of us. How many times have you typed:</p>
+
+
+<pre><code>
+some_var = 'some_value'
+logger.debug "some_var = #{some_var}" 
+</code></pre>
+
+	<p>Now try this</p>
+
+
+<pre><code>
+some_var = 'some_value'
+d { some_var }
+</code></pre>
+
+which will log
+<pre><code>
+some_var = 'some_value'  
+</code></pre>
+
+	<h3>micronaut and micronaut-rails (<a href="http://github.com/spicycode/micronaut">http://github.com/spicycode/micronaut</a> and <a href="http://github.com/spicycode/micronaut-rails">http://github.com/spicycode/micronaut-rails</a>)</h3>
+
+
+	<p>It just makes more sense to me.  Like <a href="http://rspec.info/">RSpec</a>, only fewer calories.  micronaut is a <a href="http://en.wikipedia.org/wiki/Behavior_Driven_Development"><span class="caps">BDD</span></a> framework similar to RSpec.  In fact it uses all the same RSpec matchers, so there is not a new syntax to learn.  And it adds metadata to the loaded examples that is useful for deciding which tests to run, exclude, document, etc. or building additional tools for your example suite.</p>
+
+
+	<p>The application currently has examples (a.k.a. specs) for most of the existing code.  Adding new examples, should be quick and easy.  To see it all, start with <code>rake examples</code></p>
+
+
+	<h3>beholder treasure map (<a href="http://github.com/spicycode/beholder">http://github.com/spicycode/beholder</a>)</h3>
+
+
+	<p>I like continuous integration.  I <a href="http://www.thinkrelevance.com">work for a company</a> that <a href="http://www.runcoderun.com">likes continuous integration</a>.  Having continuous testing locally let&#8217;s me as soon as I break something.</p>
+
+
+	<p>beholder watches for files to change and then reruns the appropriate tests/specs/examples.  Now I don&#8217;t have an excuse for not running the example suite, because it is always running for me.</p>
+
+
+	<h3>active_form (<a href="http://github.com/nesquena/active_form">http://github.com/nesquena/active_form</a>)</h3>
+
+
+	<p>Easy ActiveRecord validations for non-AR models (for those Contact Us forms).</p>
+
+
+	<h3>comatose (<a href="http://github.com/darthapo/comatose">http://github.com/darthapo/comatose</a>)</h3>
+
+
+	<p>Inevitably, every project wants to be able to manage the &#8220;static&#8221; content on the site.  Comatose is a very simple <span class="caps">CMS</span> plugin.  Nothing fancy, but that is great for these small projects.  You can even style the admin interface to look more like your application (which I did), but the default styles could work just fine.  It is possible to use the content in Comatose as an entire page or a partial across many pages.  The app has a migration that creates some default pages and an example partial.</p>
+
+
+	<h3>active_scaffold (<a href="http://github.com/activescaffold/active_scaffold">http://github.com/activescaffold/active_scaffold</a>)</h3>
+
+
+	<p>Fastest way to build a super simple admin interface.  Or you could use it to build more complex admin.  It is really quite flexible with its search, <span class="caps">CRUD</span>, and the ability to customize.</p>
+
+
+	<h3>display_flash_helper (<a href="http://github.com/gdagley/display_flash_helper">http://github.com/gdagley/display_flash_helper</a>)</h3>
+
+
+	<p>Shameless use of my own plugin to display flash messages.  Nothing too fancy.</p>
+
+
+	<h3>exception_notification (<a href="http://github.com/rails/exception_notification">http://github.com/rails/exception_notification</a>)</h3>
+
+
+	<p>Because they happen and I want to know about them.</p>
+
+
+	<h3>pretty_buttons (<a href="http://github.com/relevance/pretty_buttons">http://github.com/relevance/pretty_buttons</a>)</h3>
+
+
+	<p><span class="caps">HTML</span> buttons shouldn&#8217;t have to look so bad.  This plugin plays nicely with Blueprint <span class="caps">CSS</span> buttons plugin, too</p>
+
+
+	<h3>semantic_form_builder (<a href="http://github.com/nesquena/semantic_form_builder">http://github.com/nesquena/semantic_form_builder</a>)</h3>
+
+
+	<p><span class="caps">HTML</span> forms made easier and semantic.  Also makes the forms easier to style.</p>
+
+
+	<h3>seo_helper (<a href="http://github.com/relevance/seo_helper">http://github.com/relevance/seo_helper</a>)</h3>
+
+
+	<p>A few useful helpers for <span class="caps">SEO</span> purposes.  Create page titles (h1) that match the html title (title), support for meta tags and easily add some breadcrumbs to each page.</p>
+
+
+	<h2>Conclusion</h2>
+
+
+	<p>Like I said before, it is tailored to they way I like things to start out.  You can fork it and change it.  I may not roll you changes back in, but that&#8217;s ok because now you have an starter app just the way you like it.</p>

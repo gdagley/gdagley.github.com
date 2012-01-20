@@ -1,0 +1,75 @@
+--- 
+layout: post
+title: Deploying Sinatra Apps on Dreamhost
+published: true
+meta: 
+  _edit_last: "1"
+  _edit_lock: "1223616167"
+tags: 
+- Dallas
+- Dreamhost
+- Sinatra
+- Web Applications
+- microapps
+type: post
+status: publish
+---
+So I LOVE creating <a href="http://www.mckinneystation.com/2008/06/03/microapps-encourage-hacking/">small apps as a way of trying out new things</a>.  The problem is that I rarely deploy them anywhere.  Many end up sitting in my <code>/workspace</code> directory until I decide I need to reclaim the space and probably won't work on it ever again.
+
+Recently, the Dallas <a href="http://www.thinkrelevance.com">Relevance</a> folks have been meeting at Panera while we wait for our office space to materialize.  Most of the time everything works out nicely: free wifi, decent coffee, plenty of room to spread out.  But one thing that doesn't work correctly while at Panera is <a href="http://tinyurl.com">tinyurl.com</a>.  For some reason, tinyurl is blocked by Panera filters.  This would be fine for most, but since my twitter friends insist on using tinyurl to post links in their tweets, it is annoying not being able to see what is going on.
+
+<h2>Microapp to the Rescue</h2>
+
+So I figured this would be an opportunity for simple little that let me enter the tinyurl, figure out where it was going to redirect to, and go ahead and redirect me there.  This way I am never accessing the evil tinyurl.com directly from the Panera network, but instead letting my little app do that for me.
+
+The app was pretty easy to write.  I used <a href="http://github.com/bmizerany/sinatra">Sinatra</a> and created one "controller" and one "view".  Within a few minutes, Sinatra had "taken the stage on port 4567" and my app was working.  Locally.
+
+<h2>Give the app a home</h2>
+
+The next challenge came when I tried to deploy it to my trusty <a href="http://www.dreamhost.com">Dreamhost</a> account.  I love Dreamhost for playing around with small apps.  You get <a href="http://dreamhost.com/hosting.html">unlimited domains,</a> they have <a href="http://dreamhost.com/hosting-panel.html">a pretty cool admin control panel</a>, and they support deploying Rails applications with <a href="http://www.modrails.com/">Passenger Phusion</a>.  And since <a href="http://www.modrails.com/documentation/Users%20guide.html#_deploying_a_rack_based_ruby_application">Passenger Phusion 2.0 supports Rack enabled Ruby apps</a>, I knew I should be able to deploy this new app to my Dreamhost account.  A quick search turned up a useful post with <a href="http://www.gittr.com/index.php/archive/deploying-rack-apps-on-dreamhost-via-passenger-including-sinatra/">information on deploying to Sinatra apps on Dreamhost</a>.  Unfortunately, the first attempt didn't work.
+
+<h2>Always check the logs</h2>
+
+So I went to the logs to see what went wrong... wait there weren't any logs!  Fortunately I found this post for <a href="http://www.gittr.com/index.php/archive/logging-with-sinatra-and-passenger-another-try/">logging with Sinatra apps</a>.  Unfortunately, the logs didn't help.  Apparently, my problem ran deeper.  So like all good debuggers, I started commenting out code and printing out where I was in the app.  The first thing I commented out was the called to render the view using ERB.  Turns out you can configure where the root of the app is located.  Apparently the root path for a Sinatra app running on Dreamhost is not exactly the path where you deployed it.  <code>Sinatra::Application.default_options[:root]</code> looked like this: 
+
+<pre><code>
+/home/.machinename/username/app.domain.com/Rack: /home/.machinename/username
+</code></pre>
+
+<h2>Additional configuration needed</h2>
+
+Looking through the Sinatra source turned up the needed configuration changes need:
+
+<pre><code>
+path = "/path/to/app"
+
+Sinatra::Application.default_options.merge!(
+  :root => path,
+  :views => path + '/views',
+  :public => path + '/public',
+  :run => false,
+  :env => :production
+)
+</code></pre>
+
+A quick deploy later and the application was up and running.  Tomorrow we are meeting at Panera and I will get to see what everyone is tweeting about.
+
+<h2>Addendum: Deployment too?</h2>
+
+Since Sinatra apps are so small, you could just copy everything up to the server manually.  But I like have a little Rake task to do that for me.  It just touches the <code>tmp/restart.txt</code> that Passenger uses to know when to restart and then uses rsync to copy the files up to the server.
+
+<pre><code>
+desc 'Deploy to the server using rsync'
+task :restart do
+  sh "touch tmp/restart.txt"
+end
+
+desc 'Deploy to the server using rsync'
+task :deploy => :restart do
+  cmd = "rsync -ruv * #{USERNAME}@#{DOMAIN}:#{DEPLOY_PATH}"
+  sh cmd
+end
+</code></pre>
+
+<h2>Take a look at the code</h2>
+I have <a href="http://github.com/gdagley/panera">posted the code on Github</a> for everyone to take a look at.  Enjoy.

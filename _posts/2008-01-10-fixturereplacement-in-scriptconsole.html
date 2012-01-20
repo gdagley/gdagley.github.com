@@ -1,0 +1,35 @@
+--- 
+layout: post
+title: FixtureReplacement in script/console
+published: true
+meta: {}
+
+tags: 
+- RSpec
+- Rails
+- Ruby
+- Testing
+type: post
+status: publish
+---
+<div class="shadow left"><img src='http://www.mckinneystation.com/wp-content/uploads/2008/01/metra.jpg' alt='metra' /><br/><span class="credit">photo by <a href="http://www.flickr.com/photos/laffy4k/">laffy4k</a></span></div>
+
+So I came across <a href="http://www.dcmanges.com">Dan Manges</a> <a href="http://www.dcmanges.com/blog/38">Fixture Factory</a> as a way to relieve myself of the pain of fixtures for testing.  I don't mind fixtures that much, but when I have to start setting up so many different combinations, it gets a little challenging.   In reading through the comments I found that  <a href="http://railsnewbie.com/">Scott Taylor</a> had <a href="http://replacefixtures.rubyforge.org/">implemented it as a plugin</a>.  Now I get all that goodness for my <a href="http://rspec.rubyforge.org">specs</a>.
+
+<p class="clearfix" >
+The other day I wanted to play with some things using <code>script/console</code>, but was feeling too lazy to set up all of the data I was going to need to do what I wanted.  Sure enough after looking at the documentation for fixture_replacement, I can use it there too:
+</p>
+
+<pre>
+<code>
+  % script/console
+  >> include FixtureReplacement
+  >> cause = create_cause
+  >> user = create_user
+  >> cause.users << user 
+</code>
+</pre>
+
+It is really useful for easily setting up your test data in the spec (or test) that you are writing. Instead of having to go off to the fixture files and add new fixtures (and try to remember to set up all of the dependent fixtures that are needed), you can use new_xxx or create_xxx to get an object to test in a valid state with all its dependent data.  
+
+Take a look at the <a href="http://replacefixtures.rubyforge.org/">FixtureReplacement plugin</a> now.
