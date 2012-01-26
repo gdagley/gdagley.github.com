@@ -1,74 +1,74 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>{{ page.title }}</title>
-    {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
-    <meta name="author" content="{{ site.author.name }}">
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+  <title>{{ page.title }}</title>
+  {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+  <meta name="author" content="{{ site.author.name }}">
 
-    <!-- Le styles -->
-    <link href="{{ ASSET_PATH }}/css/1.4.0/bootstrap.css" rel="stylesheet">
-    <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
-    <!-- Le fav and touch icons -->
-  <!-- Update these with your own images
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-  -->
-  </head>
+  <link href="{{ ASSET_PATH }}/css/style.css?v=1" rel="stylesheet">
+  <script src="js/libs/modernizr-2.0.6.min.js"></script>
 
-  <body>
+<!-- Update these with your own images
+  <link rel="shortcut icon" href="{{ ASSET_PATH }}/favicon.ico">
+  <link rel="apple-touch-icon" href="{{ ASSET_PATH }}/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="{{ ASSET_PATH }}/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="{{ ASSET_PATH }}/apple-touch-icon-114x114.png">
+-->
+</head>
 
-    <div class="container">
-      <header>
-        <a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
-        <ul class="nav">
-          {% assign pages_list = site.pages %}
-          {% assign group = 'navigation' %}
-          {% include JB/pages_list %}
-        </ul>
-      </header>
+<body>
 
-      <div class="content">
-        {{ content }}
-      </div>
+  <div class="container">
+    <header>
+      <a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
+      <ul class="nav">
+        {% assign pages_list = site.pages %}
+        {% assign group = 'navigation' %}
+        {% include JB/pages_list %}
+      </ul>
+    </header>
 
-      <footer>
-        <p>&copy; {{ site.author.name }} 2012
-          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>,
-          <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>,
-          and <a href="http://html5boilerplate.com/" target="_blank">HTML5 Boilerplate</a>
-        </p>
-      </footer>
+    <div class="content">
+      {{ content }}
+    </div>
 
-    </div> <!-- /container -->
+    <footer>
+      <p>&copy; {{ site.author.name }} 2012
+        with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>,
+        <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>,
+        and <a href="http://html5boilerplate.com/" target="_blank">HTML5 Boilerplate</a>
+      </p>
+    </footer>
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+  </div> <!-- /container -->
 
-    <!-- scripts concatenated and minified via ant build script-->
-    <script defer src="js/plugins.js"></script>
-    <script defer src="js/script.js"></script>
-    <!-- end scripts-->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
 
-    <script> // Change UA-XXXXX-X to be your site's ID in _config.yml
-      window._gaq = [['_setAccount','{{ site.JB.analytics.google.tracking_id }}'],['_trackPageview'],['_trackPageLoadTime']];
-      Modernizr.load({
-        load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
-      });
-    </script>
+  <!-- scripts concatenated and minified via ant build script-->
+  <script defer src="js/plugins.js"></script>
+  <script defer src="js/script.js"></script>
+  <!-- end scripts-->
 
-    <!--[if lt IE 7 ]>
-      <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
-      <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
-    <![endif]-->
+  <script> // Change UA-XXXXX-X to be your site's ID in _config.yml
+    window._gaq = [['_setAccount','{{ site.JB.analytics.google.tracking_id }}'],['_trackPageview'],['_trackPageLoadTime']];
+    Modernizr.load({
+      load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
+    });
+  </script>
 
-  </body>
+  <!--[if lt IE 7 ]>
+    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+  <![endif]-->
+
+</body>
 </html>
