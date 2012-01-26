@@ -26,17 +26,15 @@ I first started by watching the <code>production.log</code> to see if the data w
 
 So I started looking in the http <code>access.log</code> to see why the data wasn't coming through to the app.  What I saw was surprising:
 
-<pre>
-<code>- - [16/Dec/2007:19:24:30 -0800] "POST /shops HTTP/1.1" 301 591 "http://www.stagingtracks.com/shops/new" "Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11"
-- - [16/Dec/2007:19:24:30 -0800] "GET /shops/ HTTP/1.1" 200 319 "http://www.stagingtracks.com/shops/new" "Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11"</code></pre>
+<pre>- - [16/Dec/2007:19:24:30 -0800] "POST /shops HTTP/1.1" 301 591 "http://www.stagingtracks.com/shops/new" "Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11"
+- - [16/Dec/2007:19:24:30 -0800] "GET /shops/ HTTP/1.1" 200 319 "http://www.stagingtracks.com/shops/new" "Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11"</pre>
 
 It looked like the POST (which goes to the 'create' method using Rails RESTful approach) was being redirected to '/shops/'.  The browser would then call '/shops/ ' with a GET (which is the 'index' action).  And the form submission never got through.  Now I was perplexed.  Why would the web server being sending the 301 Redirect?
 
 It became a little clearer when I saw this in the logs as well:
 
-<pre>
-<code>- - [16/Dec/2007:19:15:11 -0800] "GET /shops HTTP/1.1" 301 591 "http://www.stagingtracks.com/" "Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11"
-- - [16/Dec/2007:19:15:11 -0800] "GET /shops/ HTTP/1.1" 200 89174 "http://www.stagingtracks.com/" "Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11"</code></pre>
+<pre>- - [16/Dec/2007:19:15:11 -0800] "GET /shops HTTP/1.1" 301 591 "http://www.stagingtracks.com/" "Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11"
+- - [16/Dec/2007:19:15:11 -0800] "GET /shops/ HTTP/1.1" 200 89174 "http://www.stagingtracks.com/" "Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11"</pre>
 
 For some reason, the web server was causing 301 Redirects when the trailing slash was missing!  Now I had heard of <a href="http://www.google.com/search?q=trailing+slash+rails">the trailing slash problem</a>, but couldn't find a suitable solution that would be easy to implement.
 
@@ -46,9 +44,7 @@ I am so glad I am surrounded by lots of smart people.  A quick conversation with
 
 I added the following to my <code>.htaccess</code> file:
 
-<pre>
-<code>DirectorySlash Off</code>
-</pre>
+<pre>DirectorySlash Off</pre>
 
 I added it after the <code>Options +FollowSymLinks +ExecCGI</code> and before the <code>RewriteEngine On</code>
 

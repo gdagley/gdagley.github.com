@@ -21,17 +21,14 @@ With this new traffic, came some new requests for features.  The first was a req
 BEFORE:
 
 <pre>
-<code>
   def daily_question
     @question = @catechism.daily_question
     render :template => '/questions/show'
   end
-</code>
 </pre>
 
 AFTER:
 <pre>
-<code>
   def daily_question
     @question = @catechism.daily_question
     respond_to do |wants|
@@ -39,7 +36,6 @@ AFTER:
       wants.js { render_json @question.to_json }
     end
   end
-</code>
 </pre>
 
 So now I get a <a href="http://www.catechizeme.com/catechisms/westminster_shorter_catechism/daily_question">daily catechism question from the CatechizeMe website</a> or via the Google Gadget using JSON:

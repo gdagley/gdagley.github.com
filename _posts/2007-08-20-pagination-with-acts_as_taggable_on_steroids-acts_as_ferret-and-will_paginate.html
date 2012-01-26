@@ -21,7 +21,6 @@ So I needed to paginate large collection of data in a new app I am working on.  
 A quick Google search led me to <a href="http://opensoul.org/2007/8/17/acts_as_ferret-will_paginate">this for paginating acts_as_ferret search results</a>.  I modified the offset calculation and ended up with this:
 
 <pre>
-<code>
 module ActsAsFerret
   module ClassMethods
     def paginate_search(query, options = {})
@@ -35,17 +34,14 @@ module ActsAsFerret
     end
   end
 end
-</code>
 </pre>
 
 Drop that in a file lib/ferret_pagination.rb, require it in you environment.rb, and you can now do this in your controller:
 
 <pre>
-<code>
 @entries = Entry.paginate_search params[:query], 
                                        :page => params[:page],
                                        :per_page => 20
-</code>
 </pre>
 
 <h2>acts_as_taggable (on steroids)</h2>
@@ -53,7 +49,6 @@ Drop that in a file lib/ferret_pagination.rb, require it in you environment.rb, 
 So with that out of the way, I was now ready to tackle paginating entries tagged with a certain tag.  Another quick google search turned up <a href="http://errtheblog.com/post/4791">some ideas in the will_paginate comments</a>.  I used <a href="http://blog.wolfman.com/articles/2007/07/30/paginating-acts_as_taggable-with-will_paginate">this one</a> as a starting point and this is what I ended up with:
 
 <pre>
-<code>
 module ActiveRecord
   module Acts #:nodoc:
     module Taggable #:nodoc:
@@ -80,18 +75,15 @@ module ActiveRecord
     end
   end
 end
-</code>
 </pre>
 
 Again, drop that in a file lib/taggable_pagination.rb, require it in you environment.rb, and you can now do this in your controller:
 
 <pre>
-<code>
 @entries = Entry.paginate_by_tag @tag.name, 
                                      :order => 'entries.created_at DESC',
                                      :page => params[:page], 
                                      :per_page => 20
-</code>
 </pre>
 
 <h2>Thanks</h2>

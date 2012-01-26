@@ -51,9 +51,9 @@ status: publish
   <p>I was going to serve the iPhone version from the subdomain iphone.stagingtracks.com, so I needed to setup something similar in my local development environment.  Fortunately, this was very easy with the <a href="http://github.com/bjeanes/ghost/tree/master">Ruby Ghost gem</a> found via Robby Russell&#8217;s <a href="http://www.robbyonrails.com/articles/2009/01/12/get-to-know-a-gem-ghost">Get to know a gem: Ghost</a>.</p>
 
 
-<pre><code>
+<pre>
 sudo ghost add iphone.localhost.com
-</code></pre>
+</pre>
 
   <p>We needed to add the .com so that the call to the request.subdomains will pick out the iphone portion.</p>
 
@@ -65,7 +65,6 @@ sudo ghost add iphone.localhost.com
 
 
 <pre>
-<code>
 public
   - stylesheets
     - iui.css
@@ -74,7 +73,6 @@ public
   - images
     - iui
       - copy all of the .gif and .png files into here
-</code>
 </pre>
 
   <p>Because I moved the images into the <code>/images/iui</code> folder, I needed to update the image locations in the iUI css.  A quick find/replace and I was ready to go.</p>
@@ -93,17 +91,17 @@ public
 
 
 In posts_controller.rb change from:
-<pre><code>
+<pre>
 def show 
   @post = Post.find(params[:id])
 end  
-</code></pre>
+</pre>
 
   <p>to</p>
 
 <strong>UPDATE:</strong>: format.html should come before format.iphone.  For some reason it was working for browsers that were not IE.  Weird.
 
-<pre><code>
+<pre>
 def show 
   @post = Post.find(params[:id])
   respond_to do |format|
@@ -111,17 +109,17 @@ def show
     format.iphone { render :layout => false }
   end
 end  
-</code></pre>
+</pre>
 
   <p>iphone template posts/show.iphone.erb:</p>
 
 
-<pre><code>
+<pre>
 <div class="panel" title="<%= @post.title %>" selected="true">
   <h3><%= @post.title %></h3>
   <%= render :partial => 'post.html.erb', :locals => {:post => @post} %>
 </div>  
-</code></pre>
+</pre>
 
   <h3>Search Button</h3>
 
@@ -130,13 +128,13 @@ end
 
 
 In application.iphone.erb:
-<pre><code>
+<pre>
 <div class="toolbar">
   <h1 id="pageTitle"></h1>
   <a id="backButton" class="button" href="#"></a>
   <%= link_to "Search", search_path, :class => 'button' %>
 </div>
-</code></pre>
+</pre>
 
   <h3>Dynamically Growing Lists (a.k.a pagination)</h3>
 
@@ -145,34 +143,34 @@ In application.iphone.erb:
 
 
 In posts/index.iphone.erb
-<pre><code>
+<pre>
 <ul title="News" selected="true">
   <%= render :partial => 'post_items', :locals => {:posts => @posts} %>
 </ul>
-</code></pre>
+</pre>
 
 In posts/_post_items.iphone.erb
-<pre><code>
+<pre>
 <% posts.each do |post| %>
   <li><%= link_to post.title, post %></li>
 <% end %>
 <%= content_tag :li, link_to("More news...", posts_path(:page => posts.next_page), :target => "_replace") if posts.next_page %>
-</code></pre>
+</pre>
 
   <p>A quick change in the posts_controller.rb from:</p>
 
 
-<pre><code>
+<pre>
 def index
   @posts = Post.latest.published.paginate :page => page, :order => 'published_at desc'
 end
-</code></pre>
+</pre>
 
   <p>to:</p>
 
 <strong>UPDATE:</strong>: Same change to the ordering of format.html and  format.iphone.  
 
-<pre><code>
+<pre>
 def index
   @posts = Post.latest.published.paginate :page => page, :order => 'published_at desc'
   respond_to do |format|
@@ -186,7 +184,7 @@ def index
     end
   end
 end
-</code></pre>
+</pre>
 
   <h3>Styling Form Select Inputs</h3>
 
@@ -197,7 +195,7 @@ end
   <p>In search/index.iphone.erb</p>
 
 
-<pre><code>
+<pre>
 <% form_tag(search_path, :class => 'panel', :title => 'Search')  do %>
   <h2>Find Local Shops, Clubs, and Shows</h2>
 
@@ -220,12 +218,12 @@ end
   </fieldset>
   <%= link_to "Submit", "#", :class => 'whiteButton', :type => "submit" %>
 <% end %>
-</code></pre>
+</pre>
 
   <p>And in my extra iphone.css (anything else that I needed to add to iui.css)</p>
 
 
-<pre><code>
+<pre>
 .row > select {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -243,7 +241,7 @@ end
   color: #8a1f11;
   margin-left: 14px;
 }
-</code></pre>
+</pre>
 
   <h2>Conclusion</h2>
 

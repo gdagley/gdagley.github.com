@@ -38,11 +38,11 @@ The challenge with the Google Charts API "simple" url scheme is that it would ve
 
 With <code>googlecharts</code> installed on my machine I could start using it, by adding it to my <code>config/environment.rb</code> file.
 
-<pre><code>
+<pre>
 Rails::Initializer.run do |config|
   config.gem "googlecharts", :lib => "gchart"
 end
-</code></pre>
+</pre>
 
 Since the file we need to include is named "gchart", not "googlecharts", we have to specify the <code>:lib => "gchart"</code> option.
 
@@ -56,26 +56,26 @@ Once all that was in place the challenge was getting the data into a format that
 
 In my view helper module I created a method that would collect the data needed for the chart.
 
-<pre><code>
+<pre>
   def pie_chart poll
     @pie_chart ||= {
       :data => poll.choices.collect(&:votes_count),
       :colors => poll.choices.collect {|c| c.winner? ? "264409" : "8A1F11" }
     }
   end
-</code></pre>
+</pre>
 
 This just loops over the choices and collects the needed data and puts it in an easy to use Hash.
 
 <h3>The View</h3>
 
-<pre><code>
+<pre>
     <%= Gchart.pie :size => '240x160', 
                    :title => 'Vote split',
                    :data => pie_chart(@poll)[:data],
                    :bar_colors => pie_chart(@poll)[:colors],
                    :format => 'image_tag' %>
-</code></pre>
+</pre>
 
 Using googlecharts Gchart made it easy to build the "simple" url needed for a pie chart using the Google Charts API (also supports line, scatter, venn, sparklines, and meter charts)  I didn't even have to add the <img /> tag because I could pass the <code>:format => 'image_tag'</code> and one was generated for me.
 

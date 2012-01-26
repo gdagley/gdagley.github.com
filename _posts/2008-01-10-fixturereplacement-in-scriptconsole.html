@@ -21,13 +21,11 @@ The other day I wanted to play with some things using <code>script/console</code
 </p>
 
 <pre>
-<code>
   % script/console
   >> include FixtureReplacement
   >> cause = create_cause
   >> user = create_user
   >> cause.users << user 
-</code>
 </pre>
 
 It is really useful for easily setting up your test data in the spec (or test) that you are writing. Instead of having to go off to the fixture files and add new fixtures (and try to remember to set up all of the dependent fixtures that are needed), you can use new_xxx or create_xxx to get an object to test in a valid state with all its dependent data.  

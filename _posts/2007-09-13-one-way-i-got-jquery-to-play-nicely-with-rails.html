@@ -22,9 +22,7 @@ But one thing that doesn't work right when using JQuery with Rails applications 
 <p  class="clearfix">It is easily solved with this at the top of your application.js file:</p>
 
 <pre>
-<code>
 $.ajaxSetup({
   beforeSend: function(xhr) {xhr.setRequestHeader("Accept", "text/javascript");}
 });
-</code>
 </pre>

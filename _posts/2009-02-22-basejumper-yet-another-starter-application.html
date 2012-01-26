@@ -38,11 +38,11 @@ status: publish
 
 
 In app/models/user.rb
-<pre><code>
+<pre>
 class User < ActiveRecord::Base
   acts_as_authentic
 end
-</code></pre>
+</pre>
 
 	<h3>Configatron (<a href="http://github.com/markbates/configatron">http://github.com/markbates/configatron</a>)</h3>
 
@@ -51,12 +51,12 @@ end
 
 
 In config/initializers/load_config.rb:
-<pre><code>
+<pre>
 configatron.configure_from_yaml("config/config.yml", :hash => Rails.env)
-</code></pre>
+</pre>
 
 And in config/config.yml
-<pre><code>
+<pre>
 development: &#38;local
     property1: value1
     property2: value2
@@ -68,7 +68,7 @@ test:
 production:
   <<: *local
   value2: prod_value2
-</code></pre>
+</pre>
 
 	<h3>Searchlogic (<a href="http://github.com/binarylogic/searchlogic">http://github.com/binarylogic/searchlogic</a>)</h3>
 
@@ -82,23 +82,23 @@ production:
 	<p>For the lazy debugger in all of us. How many times have you typed:</p>
 
 
-<pre><code>
+<pre>
 some_var = 'some_value'
 logger.debug "some_var = #{some_var}" 
-</code></pre>
+</pre>
 
 	<p>Now try this</p>
 
 
-<pre><code>
+<pre>
 some_var = 'some_value'
 d { some_var }
-</code></pre>
+</pre>
 
 which will log
-<pre><code>
+<pre>
 some_var = 'some_value'  
-</code></pre>
+</pre>
 
 	<h3>micronaut and micronaut-rails (<a href="http://github.com/spicycode/micronaut">http://github.com/spicycode/micronaut</a> and <a href="http://github.com/spicycode/micronaut-rails">http://github.com/spicycode/micronaut-rails</a>)</h3>
 

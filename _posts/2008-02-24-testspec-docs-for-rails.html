@@ -17,7 +17,7 @@ status: publish
 I am a big <a href="http://rspec.info">RSpec</a> fan.  But occasionally, I work on projects that use <a href="http://test-spec.rubyforge.org/">test/spec</a>.  When I want output the spec documentation with RSpec, I just use <code>rake spec:doc</code>.  With test/spec, I couldn't find such a thing.  So I made one and stuck it in <code>lib/tasks/test_spec.rake</code>
 
 <br  class="clearfix" />
-<pre><code>
+<pre>
 Rake::TestTask.new(:specdox) do |t|
   t.options = '--runner=specdox'
   t.libs << 'test'
@@ -25,6 +25,6 @@ Rake::TestTask.new(:specdox) do |t|
   t.verbose = true
 end
 Rake::Task[:specdox].comment = "Generate specdox."
-</code></pre>
+</pre>
 
 Now I can use <code>rake specdox</code> to see all the wonderful spec documentation!
