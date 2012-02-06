@@ -10,6 +10,7 @@ pygments: true
 # so be sure to set them if your theme uses them.
 #
 title : Geoffrey Dagley
+tagline: Site Tagline
 author :
   name : Geoffrey Dagley
   email : geoffrey@geoffreydagley.com
@@ -72,7 +73,10 @@ JB :
     intensedebate :
       account : 123abc
     facebook :
-      apikey : 123
+      appid : 123
+      num_posts: 5
+      width: 580
+      colorscheme: light
 
   # Settings for analytics helper
   # Set 'provider' to the analytics provider you want to use.
@@ -103,4 +107,3 @@ JB :
   # and include your custom code. Your custom file must be defined at:
   #   ./_includes/custom/[HELPER]
   # where [HELPER] is the name of the helper you are overriding.
-
