@@ -38,11 +38,11 @@ JB :
   # however this value will be dynamically changed depending on your deployment situation.
   #
   # CNAME (http://yourcustomdomain.com)
-  #   DO NOT SET BASE_PATH 
+  #   DO NOT SET BASE_PATH
   #   (urls will be prefixed with "/" and work relatively)
   #
   # GitHub Pages (http://username.github.com)
-  #   DO NOT SET BASE_PATH 
+  #   DO NOT SET BASE_PATH
   #   (urls will be prefixed with "/" and work relatively)
   #
   # GitHub Project Pages (http://username.github.com/project-name)
@@ -81,7 +81,7 @@ JB :
   comments :
     provider : disqus
     disqus :
-      short_name : jekyllbootstrap
+      short_name : gdagley
     livefyre :
       site_id : 123
     intensedebate :
@@ -99,7 +99,7 @@ JB :
   analytics :
     provider : google
     google :
-        tracking_id : 'UA-123-12'
+        tracking_id : 'UA-650900-27'
     getclicky :
       site_id :
 
