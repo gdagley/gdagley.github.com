@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <!-- Title -->
+    <title>{{ site.title }} : {{ page.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Description, Keywords -->
+    {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+    <meta name="author" content="{{ site.author.name }}">
+
+    <!-- Google web fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
+
+    <!-- Stylesheets -->
+    <link href="{{ ASSET_PATH }}/style/bootstrap.css" rel="stylesheet">
+    <link href="{{ ASSET_PATH }}/style/flexslider.css" rel="stylesheet">
+    <link href="{{ ASSET_PATH }}/style/prettyPhoto.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ ASSET_PATH }}/style/font-awesome.css">
+    <!--[if IE 7]>
+    <link rel="stylesheet" href="{{ ASSET_PATH }}/style/font-awesome-ie7.css">
+    <![endif]-->
+    <link href="{{ ASSET_PATH }}/style/style.css" rel="stylesheet">
+  <!-- Color Stylesheet - orange, blue, pink, brown, red or green-->
+    <link href="{{ ASSET_PATH }}/style/green.css" rel="stylesheet">
+    <link href="{{ ASSET_PATH }}/style/jquery.githubwidget.min.css" rel="stylesheet" type="text/css" media="all">
+    <link href="{{ ASSET_PATH }}/style/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 Support for IE -->
+    <!--[if lt IE 9]>
+    <script src="{{ ASSET_PATH }}/js/html5shim.js"></script>
+    <![endif]-->
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{{ ASSET_PATH }}/img/favicon/favicon.ico">
+  </head>
+
+  <body>
+
+  <!-- Header starts -->
+
+  <header>
+     <div class="container">
+        <div class="row">
+           <div class="span4">
+              <!-- Logo and site link -->
+              <div class="logo">
+                 <h1><a href="{{ HOME_PATH }}">{{ site.title }}</a></h1>
+              </div>
+           </div>
+           <div class="span4 offset4">
+              <div class="list">
+                 <!-- Add your phone number here -->
+                 <div class="phone">
+                    <i class="icon-phone"></i> Phone: 469-742-1130
+                 </div>
+                 <hr />
+                 <!-- Add your email id here -->
+                 <div class="email">
+                    <i class="icon-envelope-alt"></i> Email: gdagley@gmail.com
+                 </div>
+              </div>
+           </div>
+        </div>
+     </div>
+  </header>
+
+  <!-- Header ends -->
+
+  <!-- Navigation Starts -->
+
+  <!-- Note down the syntax before editing. It is the default twitter bootstrap navigation -->
+
+     <div class="navbar">
+        <div class="navbar-inner">
+          <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              Menu
+            </a>
+            <div class="nav-collapse">
+              <!-- Navigation links starts here -->
+              <ul class="nav">
+                {% assign pages_list = site.pages %}
+                {% assign group = 'navigation' %}
+                {% include JB/pages_list %}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  <!-- Navigation Ends -->
+
+  <!-- Content strats -->
+
+  <div class="content">
+     <div class="container">
+        <div class="row">
+           <div class="span12">
+
+              <!-- Blog starts -->
+
+              <div class="blog">
+                 <div class="row">
+                    <div class="span12">
+
+                       <!-- Blog Posts -->
+                       <div class="row">
+                          <div class="span8">
+                            {{ content }}
+                          </div>
+                          <div class="span4">
+                             <div class="sidebar">
+                                <!-- Widget -->
+                                <div class="widget">
+                                   <h4>About</h4>
+                                   <p>Geof has been a rocket scientist, an ERP software engineer, a programming instructor, and a web developer. Now he plays games all day… at <a href="http://zyngawithfriends.com">work</a>. </p>
+                                </div>
+                                <div class="widget">
+                                  <h4>Twitter: <a href="http://twitter.com/gdagley">@gdagley</a></h4>
+                                  <div class="tweet"></div>
+                                </div>
+                                <div class="widget">
+                                  <h4>Github: <a href="https://github.com/gdagley">gdagley</a></h4>
+                                  <div id="ghw"></div>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+
+
+
+                    </div>
+                 </div>
+              </div>
+
+
+              <!-- Service ends -->
+
+           </div>
+        </div>
+     </div>
+  </div>
+
+  <!-- Content ends -->
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="span12">
+          <p class="copy">
+             <!-- Copyright information. You can remove my site link. -->
+             Copyright &copy; <a href="/">{{ site.title }}</a>
+           </p>
+         </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="{{ ASSET_PATH }}/js/jquery.js"></script>
+  <script src="{{ ASSET_PATH }}/js/bootstrap.js"></script>
+  <script src="{{ ASSET_PATH }}/js/jquery.flexslider-min.js"></script>
+  <script src="{{ ASSET_PATH }}/js/jquery.isotope.js"></script>
+  <script src="{{ ASSET_PATH }}/js/jquery.prettyPhoto.js"></script>
+  <script src="{{ ASSET_PATH }}/js/filter.js"></script>
+  <script src="{{ ASSET_PATH }}/js/jquery.tweet.js"></script>
+  <script src="{{ ASSET_PATH }}/js/jquery.githubwidget.min.js"></script>
+  <script src="{{ ASSET_PATH }}/js/custom.js"></script>
+  {% include JB/analytics %}
+  </body>
+</html>

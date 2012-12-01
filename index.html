@@ -1,15 +1,31 @@
 ---
-layout: front
-title: Hello World!
+layout: default
+title: Home
 ---
 {% include JB/setup %}
 
-I am in the process on moving my content over here.  Still waiting for the dust to settle.
+<div class="posts">
 
-In the meantime, here are some really old posts:
+  <!-- Each posts should be enclosed inside "entry" class" -->
+  {% for post in site.posts limit:5 %}
+  <div class="entry">
+     <h1><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h1>
 
-<ul class="posts">
-  {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
+     <!-- Meta details -->
+     <div class="meta">
+        <i class="icon-calendar"></i> {{ post.date | date_to_string }}</span>
+     </div>
+
+     {{ post.content }}
+
+     <p><a href="{{ BASE_PATH }}{{ post.url }}#comments">Comments...</a></p>
+  </div>
   {% endfor %}
-</ul>
+
+  <p>
+    <a href="/archive.html" class="button">Older posts</a>
+  </p>
+
+  <div class="clearfix"></div>
+
+</div>

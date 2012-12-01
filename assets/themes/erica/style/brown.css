@@ -1,0 +1,232 @@
+/* Brown Color CSS */
+
+body{
+border-top:3px solid #FF9E00;
+}
+
+.color{
+color:#FF9E00;
+}
+
+a, a:visited{
+color:#FF9E00;
+}
+
+a:hover{
+color:#FF7F00;
+}
+
+.navbar-inner{
+background: #FF9E00 !important;
+border-top:1px solid #FF7F00 !important;
+border-bottom:1px solid #FF7F00 !important; 
+}
+
+.navbar .btn{
+background:#FF7F00 !important;  
+}
+
+.navbar .btn:hover{
+background:#FF9E00 !important;
+}
+
+.navbar .nav{
+border-right:1px solid #FF8B00;
+}
+
+.navbar .nav > li > a{
+background: #FF9E00; 
+border-left:1px solid #FF8B00;
+}
+
+.navbar .nav > li > a:hover{
+background:#FF7F00 !important;
+}
+
+.navbar .nav .active > a,
+.navbar .nav .active > a:hover,
+.navbar .nav .active > a:focus {
+background: #FF7F00 !important;
+}
+
+.dropdown-toggle{
+background: #FF9E00 !important;
+}
+
+
+.dropdown-menu{
+background:#FF9E00 !important;
+border:1px solid #FF7F00;
+}
+
+.dropdown-menu a{
+background:#FF9E00 !important;
+border-bottom:1px solid #FF7F00;
+}
+
+.dropdown-menu a:hover,.dropdown-menu a:focus{
+background:#FF7F00 !important;
+}
+
+.social i{
+background:#FF9E00;
+}
+
+.social i:hover{
+background:#FF7F00;
+}
+
+.flex-caption{
+border-left:4px solid #FF9E00;
+}
+
+.service i{
+color:#FF9E00;
+}
+
+/* Timeline */
+
+.time .tidate{
+background:#FF9E00;
+}
+
+.time .timatter{
+border-bottom:2px solid #FF9E00;
+}
+
+/* Events - Accordion*/
+
+.events .accordion-heading h5{
+background:#FF9E00;
+}
+
+/* Slider */
+
+.da-slider{
+border-top: 4px solid #FF9E00;
+border-bottom: 4px solid #FF9E00;
+}
+
+.da-slide h2{
+color:#FF9E00;
+}
+
+.da-slide .da-link{
+background:#FF9E00;
+}
+
+/* Testimonial */
+
+.test{
+border-bottom:2px solid #FF9E00;
+}
+
+.test-arrow{
+border-top-color: #FF9E00;
+}
+
+/* Feature alt */
+
+.afeature:hover{
+border:5px solid #FF9E00;
+}
+
+.afmatter i{
+color:#FF9E00;
+}
+
+.rpost1:hover,.rpost2:hover{
+border-bottom:2px solid #FF9E00;
+}
+
+.accordion-heading i{
+color:#FF9E00;
+}
+
+.process i{
+color:#FF9E00;
+}
+
+.process-meta span{
+background:#FF9E00;
+}
+
+.feat h4 i{
+color:#FF9E00;
+}
+
+.content ul li{
+background-image:url('../img/list-y.png');
+}
+
+.blog .meta i{
+color:#FF9E00;
+}
+
+.posts .tags a{
+background:#FF9E00;
+border:1px solid #FF7F00;
+border-bottom:3px solid #FF7F00;
+}
+
+.posts .tags a:hover{
+border-bottom:3px solid #FF9E00;
+background:#FF7F00;
+border:1px solid #FF7F00;
+}
+
+.paging a:hover{
+background: #FF9E00;
+border:1px solid #FF7F00;
+}
+
+.paging .current{
+background: #FF9E00;
+border:1px solid #FF7F00;
+}
+
+.serv .simg i{
+color:#FF9E00;
+}
+
+.button a, .button a:visited{
+background:#FF9E00;
+border-bottom:2px solid #FF7F00;
+}
+
+.button a:hover{
+background:#FF7F00;
+}
+
+.pricel .phead-top{
+background:#FF9E00;
+border:1px solid #FF7F00;
+}
+
+.pricel .phead-bottom{
+border-top:1px solid #FF7F00;
+}
+
+.nav-tabs > li > a:hover{
+background:#FF9E00;
+}
+
+.about .asocial i{
+background:#FF9E00;
+}
+
+.resume h4{
+background:#FF9E00;
+}
+
+.resume h5{
+color:#FF9E00;
+}
+
+footer{
+border-top:3px solid #FF9E00;
+}
+
+footer ul li{
+background-image:url('../img/list-y.png');
+}
