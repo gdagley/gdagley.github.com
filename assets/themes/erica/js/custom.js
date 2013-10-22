@@ -63,6 +63,6 @@ $('#filters a').click(function(){
 });
 
 
-jQuery("a[class^='prettyPhoto']").prettyPhoto({
+jQuery(".prettyphoto").prettyPhoto({
 overlay_gallery: false, social_tools: false
 });

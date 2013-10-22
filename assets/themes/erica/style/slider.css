@@ -24,6 +24,7 @@
 	text-align: left;
 }
 .da-slide-current{
+	z-index: 1000;
 }
 .da-slider-fb .da-slide{
 	left: 100%;
