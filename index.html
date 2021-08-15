@@ -1,31 +1,38 @@
----
-layout: default
-title: Home
----
-{% include JB/setup %}
+<!DOCTYPE html>
+<html lang="en">
 
-<div class="posts">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>geoffreydagley.com</title>
+  <link rel="stylesheet" href="icons/font-awesome/css/all.css" />
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
 
-  <!-- Each posts should be enclosed inside "entry" class" -->
-  {% for post in site.posts limit:5 %}
-  <div class="entry">
-     <h1><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h1>
+<body>
+  <div class="page-wrapper">
+    <div class="content-wrapper">
+      <h1>I'm Geof</h1>
 
-     <!-- Meta details -->
-     <div class="meta">
-        <i class="icon-calendar"></i> {{ post.date | date_to_string }}</span>
-     </div>
+      <p>So many ideas, so little time.</p>
 
-     {{ post.content }}
-
-     <p><a href="{{ BASE_PATH }}{{ post.url }}#comments">Comments...</a></p>
+      <p>
+        Developer <span class="divider"> | </span> Leader
+      </p>
+      <a href="https://github.com/gdagley" aria-label="Github">
+        <i aria-hidden="true" title="Github" class="icon fab fa-github fa-2x"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/gdagley/" aria-label="LinkedIn">
+        <i aria-hidden="true" title="LinkedIn" class="icon fab fa-linkedin-in fa-2x"></i>
+      </a>
+      <a href="https://apps.apple.com/us/developer/geoffrey-dagley/id574233004" aria-label="iOS AppStore">
+        <i aria-hidden="true" title="iOS AppStore" class="icon fab fa-apple fa-2x"></i>
+      </a>
+      <a href="https://play.google.com/store/apps/developer?id=Geoffrey+Dagley&hl=en_US&gl=US" aria-label="Google Play">
+        <i aria-hidden="true" title="Google Play" class="icon fab fa-google-play fa-2x"></i>
+      </a>
+    </div>
   </div>
-  {% endfor %}
+</body>
 
-  <p>
-    <a href="/archive.html" class="button">Older posts</a>
-  </p>
-
-  <div class="clearfix"></div>
-
-</div>
+</html>
