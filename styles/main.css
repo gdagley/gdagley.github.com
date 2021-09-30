@@ -1,14 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400&display=swap");
-
 * {
+  font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Lato", "sans-serif";
   margin: 0;
   text-decoration: none;
 }
 
 html,
 body {
-  font-family: "Source Sans Pro",
-    sans-serif;
+  font-weight: 300;
   height: 100%;
   display: grid;
   place-items: center;
@@ -24,6 +22,7 @@ body {
 
 h1 {
   color: black;
+  font-weight: 300;
   font-size: 5em;
   letter-spacing: -0.04em;
 }
@@ -54,4 +53,8 @@ p {
   color: white;
   cursor: pointer;
   background-color: grey;
+}
+
+.resume {
+  font-size: 1em;
 }

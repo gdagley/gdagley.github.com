@@ -1,0 +1,529 @@
+name: 'Geoffrey Dagley'
+meta:
+  format: FRESH@0.1.0
+  version: 0.1.0
+info:
+  label: 'Develop | Lead | Innovate'
+  characterClass: Programmer
+  brief: 'Developed for all aspects and scales of web and mobile applications.  Led remote teams building massively distributed applications. Innovated with over 50 patents for new and upcoming ideas.  Provided direction with new and emerging open source technologies. Involved in all stages of the software development life cycle. Taught Java, J2EE, and other Internet technologies.'
+  image: bw_photo.jpg
+contact:
+  website: 'http://www.geoffreydagley.com'
+  phone: 469-742-1130
+  email: gdagley@gmail.com
+  github:
+    label: 'LinkedIn: @gdagley'
+    flavor: IM
+    value: 'https://linkedin.com/gdagley'
+  other:
+    -
+      label: Skype
+      flavor: IM
+      value: gdagley
+location:
+  address: '2412 Truro  Dr'
+  city: McKinney
+  region: TX
+  code: '75071'
+  country: US
+social:
+  -
+    label: GitHub
+    network: GitHub
+    user: gdagley
+    url: 'https://github.com/gdagley'
+  -
+    label: Twitter
+    network: Twitter
+    user: gdagley
+    url: 'https://twitter.com/gdagley'
+  -
+    label: LinkedIn
+    network: LinkedIn
+    user: gdagley
+    url: 'https://www.linkedin.com/in/gdagley'
+employment:
+  summary: ""
+  history:
+    -
+      employer: 'Capital One'
+      url: 'http://www.capitalone.com'
+      position: 'Sr Manager, Software Engineering'
+      summary: ""
+      start: 2020-02
+      current: true
+      keywords:
+        - Java
+        - Spring
+        - NodeJS
+        - AWS
+        - Jenkins
+        - Github
+      highlights:
+        - 'Led team of 15 engineers through the acquisition of Carvoy.com'
+        - 'Reimplemented Carvoy IP using the Capital One technology stack in 9 months'
+        - 'Remotely managed 5 teams building and growing the Capital One Leads Navigator and Showroom products'
+        - 'Oversaw the technical growth of Leads Navigator to be used by over 3500 dealerships and $1B in originations'
+        - 'Developed self sufficient teams delivering new features, while keeping software and infrastructure up to Capital One''s high standards'
+    -
+      employer: 'Capital One'
+      url: 'http://www.capitalone.com'
+      position: 'Lead Software Engineer'
+      summary: ""
+      start: 2017-07
+      end: 2020-02
+      keywords:
+        - Swift
+        - CoreML
+        - ARKit
+        - Python
+        - Java
+        - Spring
+        - NodeJS
+        - AWS
+        - Jenkins
+        - Github
+      highlights:
+        - 'Part of a research and development team exploring new technologies in financial services'
+        - 'Developed proof-of-concept augmented reality iOS app that used machine learning to create a unique car buying experience. The app was shown off at SxSW 2018 and later released as the Capital One Auto Navigator app.'
+        - 'Developed new ways to enhance the Auto Navigator search experience.'
+    -
+      employer: 'Magic Leap'
+      url: 'http://www.magicleap.com'
+      position: Programmer
+      summary: ""
+      start: 2016-04
+      end: 2017-07
+      keywords:
+        - AR/MR/XR
+        - Unity
+        - 'C#'
+      highlights:
+        - 'Prototyped variety of XR experiences for the Magic Leap One'
+        - 'Built prototyping tool to randomly generate rooms for testing AR experiences'
+    -
+      employer: 'FuzzyCube Software'
+      url: 'http://www.fuzzycubesoftware.com'
+      position: Programmer
+      summary: ""
+      start: 2014-05
+      end: 2016-04
+      keywords:
+        - Ruby
+        - Grape
+        - RSpec
+        - Unity
+        - 'C#'
+        - Postgres
+        - memcache
+        - Redis
+        - git
+      highlights:
+        - '**Tap It Big** - Mobile game built with the Unity cross platform toolset and launched on iOS and Android.  *Launched: 11/2015*'
+        - '**Unreleased game** - Developed the backend services to support a cross platform game, including leaderboards, friends, IAP transactions using Ruby and the Grape micro-framework for creating REST-like APIs.'
+    -
+      employer: 'Newtoy/Zynga With Friends'
+      url: 'http://www.zynga.com'
+      position: Programmer
+      summary: ""
+      start: 2010-05
+      end: 2013-06
+      keywords:
+        - 'Ruby on Rails'
+        - RSpec
+        - Cocos2d-x
+        - Lua
+        - MySQL
+        - memcache
+        - Redis
+        - git
+      highlights:
+        - 'Managed the remote team of developers that scaled the **With Friends Backend Service** using Ruby on Rails to support 10M+ daily users playing With Friends games (Words, Chess, Hanging, Gems, Scramble, Running, etc)'
+        - 'Coordinated the migration of the **With Friends Backend Service** to two different data centers within a year due to the Zynga acquisition.  The actual switchover in data centers was accomplished with less than an hour downtime each and minimal disruption to players.'
+        - 'Grew the **With Friends Backend Service** from initially supporting Chess and Words to being able to support any new With Friends style game that Zynga wanted to develop, i.e. Hanging, Scramble, Gems, Running With Friends.'
+        - '**Gems With Friends** - Developed the game client using the Cocos2d-x cross platform toolset'
+        - '**WeRule** - developed the backend service using Ruby on Rails to support the WeRule game for ngmoco https://en.wikipedia.org/wiki/We_Rul)'
+    -
+      employer: 'McKinney Station'
+      url: 'http://www.geoffreydagley.com'
+      position: Owner
+      summary: ""
+      start: 2010-05
+      end: 2013-06
+      keywords:
+        - 'Ruby on Rails'
+        - HTML
+        - CSS
+        - JavaScript
+        - Capistrano
+        - RSpec
+        - JQuery
+        - Corona
+        - Lua
+        - Rubymotion
+        - Java
+        - Android
+        - MySQL
+        - git
+        - Subversion
+      highlights:
+        - '**Knowsys** - Updated a set of existing flash card apps for iOS while also providing Android versions of the apps using the cross platform Corona toolset. *Launched: 6/2014*'
+        - '**Dallasrb.org** – Co-organizer of the Dallas Ruby User Group from 2006 to 2011: coordinated speakers, maintained website, and facilitated community activities for Dallas Rubyists, such as the Ruby/ Open Spaces track at Dallas Techfest 2009.'
+        - '**StagingTracks.com** – Developed and deployed entire Ruby on Rails application to connect model railroaders with area clubs, local shops, and upcoming shows.  Receives 7500+ visitors a month.  *Launched: 10/2006*'
+        - '**ROOV.com** –  Built automated test suite using RSpec.  Provided development support during final push to deployment for Beta release.  *Launched: 1/2008*'
+        - '**7-R Ranch Internal Prospect Management application** – Migrated PHP based prospect management application to Ruby on Rails. Completely RSpec driven development with Selenium based functional tests for the browser.  *Launched: Internal Application*'
+        - '**WedgeTravel.com** – Developed a Ruby on Rails trip planner to compare the cost of driving, flying commercial, and chartering a flight.  Uses Google Maps for trip mapping and geocoding.  *Launched: 5/2007*'
+        - '**SchoolBates.com** – Applied look and feel from Photoshop mockups to a functioning Ruby on Rails application. Implemented various aspects of the navigation system and catalog.  *Launched: 6/2006*'
+    -
+      employer: 'Relevance, Inc.'
+      url: 'http://www.thinkrelevance.com'
+      position: Programmer
+      summary: ""
+      start: 2007-06
+      end: 2009-05
+      keywords:
+        - 'Ruby on Rails'
+        - HTML
+        - CSS
+        - JavaScript
+        - Capistrano
+        - RSpec
+        - JQuery
+        - MySQL
+        - git
+        - Subversion
+      highlights:
+        - '**Community.TradeKing.com** –  One of two primary developers to build, test, deploy the community site for TradeKing.com.  Features included custom blog, forum, and feed reader engines to tie back to their trading platform.   *Launched: 10/2007*'
+        - '**21DayClub.com** – One of two primary developers to build a new product for Essi Systems.  The site includes tools for personal change management and personal assessments for evaluating.   *Launched: 1/2008*'
+        - '**Fizmo.com** – One of two primary developers to build an online classified system for radio stations in markets across the US.  The site included user submitted free and paid classified ads with attachment uploading.  *Launched: 6/2008*'
+        - '**PlaneStats.com** – One of two primary developers to build reporting and analysis application for the aviation industry.  The site used large amounts of freely available data from the Department of Transportation dating back to 1990, posing various database and application scaling situations. *Launched: 3/2009*'
+    -
+      employer: 'Southwest Airlines'
+      position: 'Contract Software Developer'
+      summary: ""
+      start: 2006-06
+      end: 2007-04
+      keywords:
+        - Java
+        - JUnit
+        - MockObjects
+        - IDL
+        - Eclipse
+        - ClearCase
+      highlights:
+        - 'Designed and implemented Refunds application business services for Service Oriented Architecture (SOA).'
+        - 'Implemented Group Deposit business services for Service Oriented Architecture (SOA).'
+        - 'Automate testing using JUnit to verify test cases defined in design documents, including using mock objects to test interfaces when component implementation did not exist.'
+        - 'Create IDL (Interface Definition Language) to define business service definitions.  The IDL was then used to generate Java and C++ clients to communicate with the Java business service.'
+    -
+      employer: EDS
+      position: 'Contract Software Developer'
+      summary: ""
+      start: 2005-11
+      end: 2006-08
+      keywords:
+        - Java
+        - JSP
+        - Struts
+        - JSTL
+        - Tomcat
+        - SQL
+        - Oracle
+        - MySQL
+        - Eclipse
+        - StarTeam
+      highlights:
+        - 'Designed and implemented new web-based application for MCI for provisioning virtual trunks.'
+        - 'Responsible for overall architecture of web-tier of application, including interaction with existing server architecture.'
+        - 'Jump started a team of 5 developers that did not have any prior experience developing Java Struts web applications.'
+    -
+      employer: 'Navigator Systems'
+      position: 'Contract Software Developer'
+      summary: ""
+      start: 2005-08
+      end: 2006-11
+      keywords:
+        - Java
+        - JSP
+        - Struts
+        - JSTL
+        - Toplink
+        - Tomcat
+        - Weblogic
+        - SQL
+        - WebLogic
+        - DB2
+        - Eclipse
+        - StarTeam
+      highlights:
+        - 'Designed and implemented enhancements to web-based sales applications for FritoLay.'
+        - 'Resolved existing defects and provided performance enhancements to the applications.'
+    -
+      employer: 'ZMS Technologies, Inc.'
+      position: 'Software Engineer'
+      summary: ""
+      start: 2004-11
+      end: 2005-08
+      keywords:
+        - Java
+        - EJB
+        - Hibernate
+        - Spring
+        - JBoss
+        - SQL
+        - JDBC
+        - JasperReports
+        - XML
+        - ant
+        - xdoclet
+        - MySQL
+        - CruiseControl
+        - TrackPlus
+        - JSPWiki
+        - JUnit
+        - 'Emma (code coverage)'
+        - 'Checkstyle (code standards testing)'
+        - WebLogic
+        - MySQL
+        - 'Oracle 9i'
+        - Intellij
+        - Eclipse
+        - CVS
+      highlights:
+        - 'Architected and implemented Java WebStart fleet planning solution for small businesses.'
+        - 'Provided development environment which included: one step build-test-deploy process for development, continuous integration builds and nightly builds, bug tracking system, development wiki for documentation'
+        - 'Researched and provided direction for technologies (Spring, Hibernate, WebStart) used in current development of transportation management software.'
+        - 'Analyzed, maintained, and enhanced components for transportation management J2EE web application based on customer requirements.'
+    -
+      employer: 'NextJet, Inc.'
+      position: 'Software Engineer'
+      summary: ""
+      start: 2004-07
+      end: 2004-10
+      keywords:
+        - Java
+        - J2EE
+        - EJB
+        - CMP
+        - BMP
+        - SQL
+        - JDBC
+        - JSP
+        - Struts
+        - XML
+        - Weblogic
+        - ant
+        - Intellij
+      highlights:
+        - 'Analyzed, maintained, and enhanced components for J2EE web application based on customer bug reports and enhancement requests.'
+        - '*Note:* Company sold to UPS'
+    -
+      employer: 'Parago, Inc'
+      position: 'Application Architect'
+      summary: ""
+      start: 2002-10
+      end: 2004-06
+      keywords:
+        - Java
+        - J2EE
+        - EJB
+        - CMP
+        - BMP
+        - SQL
+        - JDBC
+        - JSP
+        - JSTL
+        - Struts
+        - XML
+        - JBoss
+        - Tomcat
+        - log4j
+        - UML
+        - ant
+        - 'Oracle 8i'
+        - Intellij
+        - ClearCase
+      highlights:
+        - 'Analyzed and designed components for mission critical, enterprise wide J2EE web application.'
+        - 'Lead a team of 5 developers in building a Check Fulfillment component.'
+        - 'Developed web client interface based on discussions with the business owners'
+        - 'Deployed and performance tuned the application on JBoss application server.'
+    -
+      employer: 'Batky-Howell, Inc'
+      position: Instructor
+      summary: ""
+      start: 2001-05
+      end: 2002-10
+      keywords:
+        - Java
+        - J2EE
+        - EJB
+        - CMP
+        - BMP
+        - MDB
+        - JMS
+        - SOAP
+        - XML
+        - XSLT
+        - SAX
+        - DOM
+        - JDBC
+        - SQL
+        - JNDI
+        - JSP
+        - HTML
+        - JavaScript
+        - CSS
+        - Tomcat
+      highlights:
+        - 'Taught Java/ J2EE programming classes for variety of large customers including: Boeing, MCI Worldcom, Nielsen Media Research, Sprint'
+        - 'Developed courseware for new and developing technologies, like SOAP and Web Services.'
+        - 'Edited and revised courseware as versions of software became available, like J2EE 1.2 and Java 1.3.'
+education:
+  summary: 'BS in Aerospace Engineering'
+  level: degree
+  degree: BS
+  history:
+    -
+      institution: 'Texas A&M University'
+      area: 'Aerospace Engineering'
+      url: 'https://engineering.tamu.edu/aerospace'
+      start: 1994-09
+      end: 1998-05
+      grade: 3.4/4.0
+      curriculum: []
+skills:
+  sets:
+    -
+      name: Languages
+      level: ""
+      skills:
+        - Dart
+        - JavaScript
+        - Ruby
+        - Java
+        - Obj-C
+        - 'C#'
+        - Python
+        - Lua
+        - SQL
+        - UML
+    -
+      name: Mobile
+      level: ""
+      skills:
+        - Flutter
+        - iOS
+        - Android
+        - Unity
+        - Corona
+        - Ionic
+        - Rubymotion
+    -
+      name: Web
+      level: ""
+      skills:
+        - React
+        - 'Ruby on Rails'
+        - JQuery
+        - Angular
+        - HTML
+        - CSS
+    -
+      name: Java/J2EE
+      level: ""
+      skills:
+        - Android
+        - Java
+        - Spring
+    -
+      name: Databases
+      level: ""
+      skills:
+        - Postgres
+        - MySql
+        - Redis
+        - memcache
+    -
+      name: OS
+      level: ""
+      skills:
+        - 'Mac OS X'
+        - iOS
+        - Android
+        - Windows
+        - Unix
+  list: []
+projects:
+  -
+    title: 'Open Source'
+    summary: 'Various source projects on github.com through the years'
+    url: 'https://www.github.com/gdagley'
+  -
+    title: mibipi.com
+    summary: 'Read through the Bible app available on iOS and Android'
+    start: 2013-09
+    current: true
+    highlights:
+      - 'Originally written with RubyMotion for iOS'
+      - 'Later updated and released on iOS and Android using the Ionic cross platform toolset'
+      - 'Recently rewritten in Flutter and Dart using Bloc for state management'
+      - 'Used AWS and Serverless Framework to optimize online retrieval of daily reading contnet'
+    keywords:
+      - Flutter
+      - Dart
+      - Bloc
+      - iOS
+      - Android
+      - AWS
+      - Lambda
+    url: 'https://mibipi.com'
+  -
+    title: 31DayPrayerChallenge.com
+    summary: 'Mobile apps based on the 31 Day Prayer Challenges from mikeleake.net'
+    keywords:
+      - Flutter
+      - Dart
+      - Bloc
+      - iOS
+      - Android
+    start: 2009-09
+    current: true
+    highlights:
+      - 'The original iOS apps were built with RubyMotion and the Android apps were built with Java'
+      - 'Recently rewritten in Flutter and Dart using Bloc for state management'
+    url: 'https://31DaypPrayerChallenge.com'
+  -
+    title: CatechizeMe
+    start: 2009-09
+    current: true
+    summary: 'Mobile app to encourage learning church doctrine through catechisms.  *Launched: 11/2012*'
+    keywords:
+      - Flutter
+      - Dart
+      - Bloc
+      - iOS
+      - Android
+    highlights:
+      - 'The iOS app was built with RubyMotion and the Android app was build with Java'
+      - 'Rewritten in Flutter and Dart using Bloc for state management'
+    url: 'https://CatechizeMe.com'
+speaking:
+  -
+    title: 'Scaling With Friends'
+    role: Speaker
+    event: 'Rails Conf 2011'
+    location: 'Baltimore, MD'
+    date: '2011'
+  -
+    title: 'Scaling With Friends'
+    role: Speaker
+    event: 'Dallas Big Ruby 2013'
+    location: 'Dallas, TX'
+    date: '2013'
+  -
+    title: 'Failing With Friends'
+    role: Speaker
+    event: 'Dallas Crosstrain 2014'
+    location: 'Dallas, TX'
+    date: '2014'
