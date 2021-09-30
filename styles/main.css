@@ -14,8 +14,6 @@ body {
 }
 
 .page-wrapper {
-  width: 480px;
-  display: grid;
   place-items: center;
   text-align: center;
 }
