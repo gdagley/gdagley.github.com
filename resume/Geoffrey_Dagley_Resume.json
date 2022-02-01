@@ -42,15 +42,25 @@
     {
       "company": "Capital One",
       "website": "http://www.capitalone.com",
+      "position": "Director, Software Engineering",
+      "startDate": "2022-02",
+      "summary": "",
+      "highlights": [
+        "Remotely managed 5 teams building and growing the Capital One Leads Navigator and Showroom products",
+        "Developed self sufficient teams delivering new features, while keeping software and infrastructure up to Capital One's high standards"
+      ]
+    },
+    {
+      "company": "Capital One",
+      "website": "http://www.capitalone.com",
       "position": "Sr Manager, Software Engineering",
       "startDate": "2020-02",
+      "endDate": "2022-02",
       "summary": "",
       "highlights": [
         "Led team of 15 engineers through the acquisition of Carvoy.com",
         "Reimplemented Carvoy IP using the Capital One technology stack in 9 months",
-        "Remotely managed 5 teams building and growing the Capital One Leads Navigator and Showroom products",
-        "Oversaw the technical growth of Leads Navigator to be used by over 3500 dealerships and $1B in originations",
-        "Developed self sufficient teams delivering new features, while keeping software and infrastructure up to Capital One's high standards"
+        "Oversaw the technical growth of Leads Navigator to be used by over 3500 dealerships and $1B in originations"
       ]
     },
     {
@@ -253,6 +263,7 @@
       "name": "Mobile",
       "level": "",
       "keywords": [
+        "AWS Amplify",
         "Flutter",
         "iOS",
         "Android",
@@ -266,6 +277,7 @@
       "name": "Web",
       "level": "",
       "keywords": [
+        "AWS Amplify",
         "React",
         "Ruby on Rails",
         "JQuery",
@@ -287,6 +299,7 @@
       "name": "Databases",
       "level": "",
       "keywords": [
+        "AWS DynamoDB",
         "Postgres",
         "MySql",
         "Redis",
@@ -297,6 +310,7 @@
       "name": "OS",
       "level": "",
       "keywords": [
+        "AWS",
         "Mac OS X",
         "iOS",
         "Android",

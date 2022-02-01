@@ -48,10 +48,27 @@ employment:
     -
       employer: 'Capital One'
       url: 'http://www.capitalone.com'
+      position: 'Director, Software Engineering'
+      summary: ""
+      start: 2022-02
+      current: true
+      keywords:
+        - Java
+        - Spring
+        - NodeJS
+        - AWS
+        - Jenkins
+        - Github
+      highlights:
+        - 'Remotely managed 5 teams building and growing the Capital One Leads Navigator and Showroom products'
+        - 'Developed self sufficient teams delivering new features, while keeping software and infrastructure up to Capital One''s high standards'
+    -
+      employer: 'Capital One'
+      url: 'http://www.capitalone.com'
       position: 'Sr Manager, Software Engineering'
       summary: ""
       start: 2020-02
-      current: true
+      end: 2022-02
       keywords:
         - Java
         - Spring
@@ -62,9 +79,7 @@ employment:
       highlights:
         - 'Led team of 15 engineers through the acquisition of Carvoy.com'
         - 'Reimplemented Carvoy IP using the Capital One technology stack in 9 months'
-        - 'Remotely managed 5 teams building and growing the Capital One Leads Navigator and Showroom products'
         - 'Oversaw the technical growth of Leads Navigator to be used by over 3500 dealerships and $1B in originations'
-        - 'Developed self sufficient teams delivering new features, while keeping software and infrastructure up to Capital One''s high standards'
     -
       employer: 'Capital One'
       url: 'http://www.capitalone.com'
@@ -412,6 +427,7 @@ skills:
       name: Mobile
       level: ""
       skills:
+        - 'AWS Amplify'
         - Flutter
         - iOS
         - Android
@@ -423,6 +439,7 @@ skills:
       name: Web
       level: ""
       skills:
+        - 'AWS Amplify'
         - React
         - 'Ruby on Rails'
         - JQuery
@@ -440,6 +457,7 @@ skills:
       name: Databases
       level: ""
       skills:
+        - 'AWS DynamoDB'
         - Postgres
         - MySql
         - Redis
@@ -448,6 +466,7 @@ skills:
       name: OS
       level: ""
       skills:
+        - AWS
         - 'Mac OS X'
         - iOS
         - Android

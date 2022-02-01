@@ -9,22 +9,26 @@ Developed for all aspects and scales of web and mobile applications.  Led remote
 ## SKILLS
 
   - Languages: Dart JavaScript Ruby Java Obj-C C# Python Lua SQL UML 
-  - Mobile: Flutter iOS Android Unity Corona Ionic Rubymotion 
-  - Web: React Ruby on Rails JQuery Angular HTML CSS 
+  - Mobile: AWS Amplify Flutter iOS Android Unity Corona Ionic Rubymotion 
+  - Web: AWS Amplify React Ruby on Rails JQuery Angular HTML CSS 
   - Java/J2EE: Android Java Spring 
-  - Databases: Postgres MySql Redis memcache 
-  - OS: Mac OS X iOS Android Windows Unix 
+  - Databases: AWS DynamoDB Postgres MySql Redis memcache 
+  - OS: AWS Mac OS X iOS Android Windows Unix 
 
 ## Work
 
-### *Sr Manager, Software Engineering*, [Capital One](http://www.capitalone.com) (2020-02 — Present)
+### *Director, Software Engineering*, [Capital One](http://www.capitalone.com) (2022-02 — Present)
+
+
+  - Remotely managed 5 teams building and growing the Capital One Leads Navigator and Showroom products
+  - Developed self sufficient teams delivering new features, while keeping software and infrastructure up to Capital One's high standards
+
+### *Sr Manager, Software Engineering*, [Capital One](http://www.capitalone.com) (2020-02 — 2022-02)
 
 
   - Led team of 15 engineers through the acquisition of Carvoy.com
   - Reimplemented Carvoy IP using the Capital One technology stack in 9 months
-  - Remotely managed 5 teams building and growing the Capital One Leads Navigator and Showroom products
   - Oversaw the technical growth of Leads Navigator to be used by over 3500 dealerships and $1B in originations
-  - Developed self sufficient teams delivering new features, while keeping software and infrastructure up to Capital One's high standards
 
 ### *Lead Software Engineer*, [Capital One](http://www.capitalone.com) (2017-07 — 2020-02)
 
