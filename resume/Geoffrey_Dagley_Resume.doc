@@ -530,7 +530,7 @@
         <w:pPr>
           <w:pStyle w:val="Summary"/>
         </w:pPr>
-        <w:r><w:rPr></w:rPr><w:t>Developed for all aspects and scales of web and mobile applications.  Led remote teams building massively distributed applications. Innovated with over 50 patents for new and upcoming ideas.  Provided direction with new and emerging open source technologies. Involved in all stages of the software development life cycle. Taught Java, J2EE, and other Internet technologies.</w:t></w:r>
+        <w:r><w:rPr></w:rPr><w:t>20+ years of experience developing for all aspects and scales of web and mobile applications, leading remote teams building massively distributed applications, and innovating with over 50 patents for new and upcoming ideas. Involved in all stages of the software development life cycle, both in startups and in enterprise environments, providing direction with new and emerging open source technologies</w:t></w:r>
       </w:p>
       <wx:sub-section>
   <w:p wsp:rsidR="00C146CA" wsp:rsidRPr="00C146CA" wsp:rsidRDefault="00C146CA" wsp:rsidP="00C146CA">
@@ -855,7 +855,7 @@
           <w:sz-cs w:val="20"/>
         </w:rPr>
       </w:pPr>
-      <w:r><w:rPr></w:rPr><w:t>Remotely managed 5 teams building and growing the Capital One Leads Navigator and Showroom products</w:t></w:r>
+      <w:r><w:rPr></w:rPr><w:t>Remotely managed multiple teams building and growing the Capital One Leads Navigator and Showroom products</w:t></w:r>
     </w:p>
     <w:p wsp:rsidR="00C146CA" wsp:rsidRDefault="009452CA" wsp:rsidP="00C146CA">
       <w:pPr>
@@ -871,6 +871,36 @@
         </w:rPr>
       </w:pPr>
       <w:r><w:rPr></w:rPr><w:t>Developed self sufficient teams delivering new features, while keeping software and infrastructure up to Capital One&amp;apos;s high standards</w:t></w:r>
+    </w:p>
+    <w:p wsp:rsidR="00C146CA" wsp:rsidRDefault="009452CA" wsp:rsidP="00C146CA">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph"/>
+        <w:listPr>
+          <w:ilvl w:val="0"/>
+          <w:ilfo w:val="1"/>
+          <wx:t wx:val="•"/>
+          <wx:font wx:val="Calibri"/>
+        </w:listPr>
+        <w:rPr>
+          <w:sz-cs w:val="20"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r><w:rPr></w:rPr><w:t>Worked closely with product partners to define and prioritize product and technical initiatives</w:t></w:r>
+    </w:p>
+    <w:p wsp:rsidR="00C146CA" wsp:rsidRDefault="009452CA" wsp:rsidP="00C146CA">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph"/>
+        <w:listPr>
+          <w:ilvl w:val="0"/>
+          <w:ilfo w:val="1"/>
+          <wx:t wx:val="•"/>
+          <wx:font wx:val="Calibri"/>
+        </w:listPr>
+        <w:rPr>
+          <w:sz-cs w:val="20"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r><w:rPr></w:rPr><w:t>Actively involved in the technical interviewing process, both as an interviewer and as a mentor to new interviewers</w:t></w:r>
     </w:p>
 
   </wx:sub-section>
@@ -1203,7 +1233,7 @@
         </w:tabs>
       </w:pPr>
       <w:r wsp:rsidR="00C146CA" wsp:rsidRPr="00C146CA">
-        <w:t>Programmer, </w:t>
+        <w:t>Lead, Backend Services, </w:t>
       </w:r>
       <w:hlink w:dest="http://www.zynga.com">
         <w:r wsp:rsidR="009452CA" wsp:rsidRPr="00606071">

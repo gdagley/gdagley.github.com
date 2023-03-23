@@ -4,7 +4,7 @@ Email: gdagley@gmail.com
 Tel: 469-742-1130
 Web: http://www.geoffreydagley.com
 
-Developed for all aspects and scales of web and mobile applications.  Led remote teams building massively distributed applications. Innovated with over 50 patents for new and upcoming ideas.  Provided direction with new and emerging open source technologies. Involved in all stages of the software development life cycle. Taught Java, J2EE, and other Internet technologies.
+20+ years of experience developing for all aspects and scales of web and mobile applications, leading remote teams building massively distributed applications, and innovating with over 50 patents for new and upcoming ideas. Involved in all stages of the software development life cycle, both in startups and in enterprise environments, providing direction with new and emerging open source technologies
 
 ## SKILLS
 
@@ -20,8 +20,10 @@ Developed for all aspects and scales of web and mobile applications.  Led remote
 ### *Director, Software Engineering*, [Capital One](http://www.capitalone.com) (2022-02 — Present)
 
 
-  - Remotely managed 5 teams building and growing the Capital One Leads Navigator and Showroom products
+  - Remotely managed multiple teams building and growing the Capital One Leads Navigator and Showroom products
   - Developed self sufficient teams delivering new features, while keeping software and infrastructure up to Capital One's high standards
+  - Worked closely with product partners to define and prioritize product and technical initiatives
+  - Actively involved in the technical interviewing process, both as an interviewer and as a mentor to new interviewers
 
 ### *Sr Manager, Software Engineering*, [Capital One](http://www.capitalone.com) (2020-02 — 2022-02)
 
@@ -49,7 +51,7 @@ Developed for all aspects and scales of web and mobile applications.  Led remote
   - **Tap It Big** - Mobile game built with the Unity cross platform toolset and launched on iOS and Android.  *Launched: 11/2015*
   - **Unreleased game** - Developed the backend services to support a cross platform game, including leaderboards, friends, IAP transactions using Ruby and the Grape micro-framework for creating REST-like APIs.
 
-### *Programmer*, [Newtoy/Zynga With Friends](http://www.zynga.com) (2010-05 — 2013-06)
+### *Lead, Backend Services*, [Newtoy/Zynga With Friends](http://www.zynga.com) (2010-05 — 2013-06)
 
 
   - Managed the remote team of developers that scaled the **With Friends Backend Service** using Ruby on Rails to support 10M+ daily users playing With Friends games (Words, Chess, Hanging, Gems, Scramble, Running, etc)

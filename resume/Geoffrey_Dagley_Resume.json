@@ -18,7 +18,7 @@
       }
     ],
     "name": "Geoffrey Dagley",
-    "summary": "Developed for all aspects and scales of web and mobile applications.  Led remote teams building massively distributed applications. Innovated with over 50 patents for new and upcoming ideas.  Provided direction with new and emerging open source technologies. Involved in all stages of the software development life cycle. Taught Java, J2EE, and other Internet technologies.",
+    "summary": "20+ years of experience developing for all aspects and scales of web and mobile applications, leading remote teams building massively distributed applications, and innovating with over 50 patents for new and upcoming ideas. Involved in all stages of the software development life cycle, both in startups and in enterprise environments, providing direction with new and emerging open source technologies",
     "picture": "bw_photo.jpg",
     "profiles": [
       {
@@ -46,8 +46,10 @@
       "startDate": "2022-02",
       "summary": "",
       "highlights": [
-        "Remotely managed 5 teams building and growing the Capital One Leads Navigator and Showroom products",
-        "Developed self sufficient teams delivering new features, while keeping software and infrastructure up to Capital One's high standards"
+        "Remotely managed multiple teams building and growing the Capital One Leads Navigator and Showroom products",
+        "Developed self sufficient teams delivering new features, while keeping software and infrastructure up to Capital One's high standards",
+        "Worked closely with product partners to define and prioritize product and technical initiatives",
+        "Actively involved in the technical interviewing process, both as an interviewer and as a mentor to new interviewers"
       ]
     },
     {
@@ -103,7 +105,7 @@
     {
       "company": "Newtoy/Zynga With Friends",
       "website": "http://www.zynga.com",
-      "position": "Programmer",
+      "position": "Lead, Backend Services",
       "startDate": "2010-05",
       "endDate": "2013-06",
       "summary": "",
