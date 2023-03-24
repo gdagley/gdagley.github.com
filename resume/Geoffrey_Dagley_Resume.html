@@ -64,7 +64,7 @@
               margin-top: 0;
               margin-bottom: 2px;
               /*width: 85%;*/
-              float: left;
+              /* float: left; */
             }
             
             table {
@@ -126,14 +126,18 @@
             }
             
             .tenure {
-              float: right;
+              /* float: right; */
               color: #6F6F6F;
-              background-color: #F5F5F5;
+              /* background-color: #F5F5F5; */
               border-radius: 6px;
               padding: 4px 6px;
               font-size: 85%;
               font-weight: 600;
               margin-top: 3px;
+            }
+            
+            h3 + .tenure {
+              margin-bottom: 1em;
             }
             
             .location {
@@ -179,11 +183,22 @@
             
             #contact {
              clear: both;
-             float: right;
+             float: left;
              margin-top: 2px;
             }
             
             #contact span + span {
+              margin-left: 10px;
+            }
+            
+            #social {
+             /* clear: both; */
+             float: right;
+             margin-top: 2px;
+            text-align: right;
+            }
+            
+            #social span + span {
               margin-left: 10px;
             }
             
@@ -232,20 +247,27 @@
                  <h1>Geoffrey <span style="color: #C00000;">Dagley</span></h1>
  <span class="label">Develop | Lead | Innovate</span>
 
-                <p id="contact"> <span class="email"><a
-            href="mailto:gdagley@gmail.com">gdagley@gmail.com</a></span>
-
-                    <span
-                    class="phone">469-742-1130</span> <span class="website"><a
-            href=""></a></span>
- <span class="website"><a
-            href="https://linkedin.com/gdagley">LinkedIn: @gdagley</a></span>
-
-                </p>
+                <div id="contact"> <span class="phone">McKinney, TX</span>
+                    <br /> <span class="phone">469-742-1130</span>
+                    <br /> <span class="email"><a href="mailto:gdagley@gmail.com">gdagley@gmail.com</a></span>
+                    <br
+                    />
+                </div>
+                <div id="social"> <span class="website"><a
+            href="https://www.geoffreydagley.com">geoffreydagley.com</a></span>
+                    <br
+                    /> <span class="website"><a
+            href="https://github.com/gdagley">GitHub: @gdagley</a></span>
+                    <br
+                    /> <span class="website"><a
+            href="https://linkedin.com/in/gdagley">LinkedIn: @gdagley</a></span>
+                    <br
+                    />
+                </div>
             </header>
             <section id="summary">20+ years of experience developing for all aspects and scales of web and
                 mobile applications, leading remote teams building massively distributed
-                applications, and innovating with over 50 patents for new and upcoming
+                applications, and innovating with over 75 patents for new and upcoming
                 ideas. Involved in all stages of the software development life cycle, both
                 in startups and in enterprise environments, providing direction with new
                 and emerging open source technologies</section>
@@ -297,15 +319,15 @@
 
                 </header>
                 <div>
-                     <h3><em>Director, Software Engineering</em>,
+                     <h3><em>Director, Software Engineering</em><br/>
             <a href="http://www.capitalone.com">Capital One</a>
             </h3>
- <span class="tenure">2022-02 — Present</span>
 
+                    <p class="tenure">Feb 2022 - Present</p>
                     <p></p>
                     <ul>
-                        <li>Remotely managed multiple teams building and growing the Capital One Leads
-                            Navigator and Showroom products</li>
+                        <li>Remotely managed multiple agile teams, building and growing the Capital
+                            One Leads Navigator and Showroom products</li>
                         <li>Developed self sufficient teams delivering new features, while keeping
                             software and infrastructure up to Capital One&#39;s high standards</li>
                         <li>Worked closely with product partners to define and prioritize product
@@ -316,11 +338,11 @@
 
                 </div>
                 <div>
-                     <h3><em>Sr Manager, Software Engineering</em>,
+                     <h3><em>Sr Manager, Software Engineering</em><br/>
             <a href="http://www.capitalone.com">Capital One</a>
             </h3>
- <span class="tenure">2020-02 — 2022-02</span>
 
+                    <p class="tenure">Feb 2020 - Feb 2022</p>
                     <p></p>
                     <ul>
                         <li>Led team of 15 engineers through the acquisition of Carvoy.com</li>
@@ -331,11 +353,11 @@
 
                 </div>
                 <div>
-                     <h3><em>Lead Software Engineer</em>,
+                     <h3><em>Lead Software Engineer</em><br/>
             <a href="http://www.capitalone.com">Capital One</a>
             </h3>
- <span class="tenure">2017-07 — 2020-02</span>
 
+                    <p class="tenure">Jul 2017 - Feb 2020</p>
                     <p></p>
                     <ul>
                         <li>Part of a research and development team exploring new technologies in
@@ -348,11 +370,11 @@
 
                 </div>
                 <div>
-                     <h3><em>Programmer</em>,
+                     <h3><em>Programmer</em><br/>
             <a href="http://www.magicleap.com">Magic Leap</a>
             </h3>
- <span class="tenure">2016-04 — 2017-07</span>
 
+                    <p class="tenure">Apr 2016 - Jul 2017</p>
                     <p></p>
                     <ul>
                         <li>Prototyped variety of XR experiences for the Magic Leap One</li>
@@ -361,11 +383,11 @@
 
                 </div>
                 <div>
-                     <h3><em>Programmer</em>,
+                     <h3><em>Programmer</em><br/>
             <a href="http://www.fuzzycubesoftware.com">FuzzyCube Software</a>
             </h3>
- <span class="tenure">2014-05 — 2016-04</span>
 
+                    <p class="tenure">May 2014 - Apr 2016</p>
                     <p></p>
                     <ul>
                         <li><strong>Tap It Big</strong> - Mobile game built with the Unity cross platform
@@ -378,11 +400,11 @@
 
                 </div>
                 <div>
-                     <h3><em>Lead, Backend Services</em>,
+                     <h3><em>Lead, Backend Services</em><br/>
             <a href="http://www.zynga.com">Newtoy/Zynga With Friends</a>
             </h3>
- <span class="tenure">2010-05 — 2013-06</span>
 
+                    <p class="tenure">May 2010 - Jun 2013</p>
                     <p></p>
                     <ul>
                         <li>Managed the remote team of developers that scaled the <strong>With Friends Backend Service</strong> using
@@ -404,11 +426,11 @@
 
                 </div>
                 <div>
-                     <h3><em>Owner</em>,
+                     <h3><em>Owner</em><br/>
             <a href="http://www.geoffreydagley.com">McKinney Station</a>
             </h3>
- <span class="tenure">2010-05 — 2013-06</span>
 
+                    <p class="tenure">May 2010 - Jun 2013</p>
                     <p></p>
                     <ul>
                         <li><strong>Knowsys</strong> - Updated a set of existing flash card apps for
@@ -442,11 +464,11 @@
 
                 </div>
                 <div>
-                     <h3><em>Programmer</em>,
+                     <h3><em>Programmer</em><br/>
             <a href="http://www.thinkrelevance.com">Relevance, Inc.</a>
             </h3>
- <span class="tenure">2007-06 — 2009-05</span>
 
+                    <p class="tenure">Jun 2007 - May 2009</p>
                     <p></p>
                     <ul>
                         <li><strong>Community.TradeKing.com</strong> – One of two primary developers
@@ -472,11 +494,11 @@
 
                 </div>
                 <div>
-                     <h3><em>Contract Software Developer</em>,
+                     <h3><em>Contract Software Developer</em><br/>
             Southwest Airlines
             </h3>
- <span class="tenure">2006-06 — 2007-04</span>
 
+                    <p class="tenure">Jun 2006 - Apr 2007</p>
                     <p></p>
                     <ul>
                         <li>Designed and implemented Refunds application business services for Service
@@ -493,11 +515,11 @@
 
                 </div>
                 <div>
-                     <h3><em>Contract Software Developer</em>,
+                     <h3><em>Contract Software Developer</em><br/>
             EDS
             </h3>
- <span class="tenure">2005-11 — 2006-08</span>
 
+                    <p class="tenure">Nov 2005 - Aug 2006</p>
                     <p></p>
                     <ul>
                         <li>Designed and implemented new web-based application for MCI for provisioning
@@ -510,11 +532,11 @@
 
                 </div>
                 <div>
-                     <h3><em>Contract Software Developer</em>,
+                     <h3><em>Contract Software Developer</em><br/>
             Navigator Systems
             </h3>
- <span class="tenure">2005-08 — 2006-11</span>
 
+                    <p class="tenure">Aug 2005 - Nov 2006</p>
                     <p></p>
                     <ul>
                         <li>Designed and implemented enhancements to web-based sales applications
@@ -525,11 +547,11 @@
 
                 </div>
                 <div>
-                     <h3><em>Software Engineer</em>,
+                     <h3><em>Software Engineer</em><br/>
             ZMS Technologies, Inc.
             </h3>
- <span class="tenure">2004-11 — 2005-08</span>
 
+                    <p class="tenure">Nov 2004 - Aug 2005</p>
                     <p></p>
                     <ul>
                         <li>Architected and implemented Java WebStart fleet planning solution for
@@ -545,11 +567,11 @@
 
                 </div>
                 <div>
-                     <h3><em>Software Engineer</em>,
+                     <h3><em>Software Engineer</em><br/>
             NextJet, Inc.
             </h3>
- <span class="tenure">2004-07 — 2004-10</span>
 
+                    <p class="tenure">Jul 2004 - Oct 2004</p>
                     <p></p>
                     <ul>
                         <li>Analyzed, maintained, and enhanced components for J2EE web application
@@ -559,11 +581,11 @@
 
                 </div>
                 <div>
-                     <h3><em>Application Architect</em>,
+                     <h3><em>Application Architect</em><br/>
             Parago, Inc
             </h3>
- <span class="tenure">2002-10 — 2004-06</span>
 
+                    <p class="tenure">Oct 2002 - Jun 2004</p>
                     <p></p>
                     <ul>
                         <li>Analyzed and designed components for mission critical, enterprise wide
@@ -576,11 +598,11 @@
 
                 </div>
                 <div>
-                     <h3><em>Instructor</em>,
+                     <h3><em>Instructor</em><br/>
             Batky-Howell, Inc
             </h3>
- <span class="tenure">2001-05 — 2002-10</span>
 
+                    <p class="tenure">May 2001 - Oct 2002</p>
                     <p></p>
                     <ul>
                         <li>Taught Java/ J2EE programming classes for variety of large customers including:
@@ -610,8 +632,8 @@
                      <h3>
         <a href="https://mibipi.com">mibipi.com</a>
         </h3>
- <span class="tenure">2013-09 — Present</span>
 
+                    <div class="tenure">Sep 2013 - Present</div>
                     <p>Read through the Bible app available on iOS and Android</p>
                     <ul>
                         <li>Originally written with RubyMotion for iOS</li>
@@ -620,34 +642,34 @@
                         <li>Recently rewritten in Flutter and Dart using Bloc for state management</li>
                         <li>Used AWS and Serverless Framework to optimize online retrieval of daily
                             reading contnet</li>
-                    </ul> <span class="keywords">Flutter Dart Bloc iOS Android AWS Lambda </span> 
+                    </ul> <span class="keywords">Flutter, Dart, Bloc, iOS, Android, AWS, Lambda </span> 
                 </div>
                 <div>
                      <h3>
         <a href="https://31DaypPrayerChallenge.com">31DayPrayerChallenge.com</a>
         </h3>
- <span class="tenure">2009-09 — Present</span>
 
+                    <div class="tenure">Sep 2009 - Present</div>
                     <p>Mobile apps based on the 31 Day Prayer Challenges from mikeleake.net</p>
                     <ul>
                         <li>The original iOS apps were built with RubyMotion and the Android apps
                             were built with Java</li>
                         <li>Recently rewritten in Flutter and Dart using Bloc for state management</li>
-                    </ul> <span class="keywords">Flutter Dart Bloc iOS Android </span> 
+                    </ul> <span class="keywords">Flutter, Dart, Bloc, iOS, Android </span> 
                 </div>
                 <div>
                      <h3>
         <a href="https://CatechizeMe.com">CatechizeMe</a>
         </h3>
- <span class="tenure">2009-09 — Present</span>
 
+                    <div class="tenure">Sep 2009 - Present</div>
                     <p>Mobile app to encourage learning church doctrine through catechisms. <em>Launched: 11/2012</em>
                     </p>
                     <ul>
                         <li>The iOS app was built with RubyMotion and the Android app was build with
                             Java</li>
                         <li>Rewritten in Flutter and Dart using Bloc for state management</li>
-                    </ul> <span class="keywords">Flutter Dart Bloc iOS Android </span> 
+                    </ul> <span class="keywords">Flutter, Dart, Bloc, iOS, Android </span> 
                 </div>
             </section>
             <hr>
@@ -658,7 +680,7 @@
                 </header>
                 <div>
                      <h3>Texas A&amp;M University</h3>
- <span class="tenure">1994-09 — 1998-05</span>
+ <span class="tenure">Sep 1994 - May 1998</span>
 
                 </div>
             </section>

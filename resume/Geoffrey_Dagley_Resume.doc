@@ -516,13 +516,13 @@
           </w:rPr>
           <w:t> - </w:t>
         </w:r>
-        <w:hlink w:dest="http://www.geoffreydagley.com">
+        <w:hlink w:dest="[object Object]">
           <w:r wsp:rsidRPr="003876BF">
             <w:rPr>
               <w:rStyle w:val="Hyperlink"/>
               <w:sz w:val="16"/>
             </w:rPr>
-            <w:t>http://www.geoffreydagley.com</w:t>
+            <w:t>[object Object]</w:t>
           </w:r>
         </w:hlink>
       </w:p>
@@ -530,7 +530,7 @@
         <w:pPr>
           <w:pStyle w:val="Summary"/>
         </w:pPr>
-        <w:r><w:rPr></w:rPr><w:t>20+ years of experience developing for all aspects and scales of web and mobile applications, leading remote teams building massively distributed applications, and innovating with over 50 patents for new and upcoming ideas. Involved in all stages of the software development life cycle, both in startups and in enterprise environments, providing direction with new and emerging open source technologies</w:t></w:r>
+        <w:r><w:rPr></w:rPr><w:t>20+ years of experience developing for all aspects and scales of web and mobile applications, leading remote teams building massively distributed applications, and innovating with over 75 patents for new and upcoming ideas. Involved in all stages of the software development life cycle, both in startups and in enterprise environments, providing direction with new and emerging open source technologies</w:t></w:r>
       </w:p>
       <wx:sub-section>
   <w:p wsp:rsidR="00C146CA" wsp:rsidRPr="00C146CA" wsp:rsidRDefault="00C146CA" wsp:rsidP="00C146CA">
@@ -830,7 +830,7 @@
         <w:rPr>
           <w:rStyle w:val="FromTo"/>
         </w:rPr>
-        <w:t>Feb 2022 — Present</w:t>
+        <w:t>Feb 2022 - Present</w:t>
       </w:r>
     </w:p>
     <w:p wsp:rsidR="00C146CA" wsp:rsidRPr="000A3AF0" wsp:rsidRDefault="00C146CA" wsp:rsidP="00C146CA">
@@ -855,7 +855,7 @@
           <w:sz-cs w:val="20"/>
         </w:rPr>
       </w:pPr>
-      <w:r><w:rPr></w:rPr><w:t>Remotely managed multiple teams building and growing the Capital One Leads Navigator and Showroom products</w:t></w:r>
+      <w:r><w:rPr></w:rPr><w:t>Remotely managed multiple agile teams, building and growing the Capital One Leads Navigator and Showroom products</w:t></w:r>
     </w:p>
     <w:p wsp:rsidR="00C146CA" wsp:rsidRDefault="009452CA" wsp:rsidP="00C146CA">
       <w:pPr>
@@ -932,7 +932,7 @@
         <w:rPr>
           <w:rStyle w:val="FromTo"/>
         </w:rPr>
-        <w:t>Feb 2020 — Feb 2022</w:t>
+        <w:t>Feb 2020 - Feb 2022</w:t>
       </w:r>
     </w:p>
     <w:p wsp:rsidR="00C146CA" wsp:rsidRPr="000A3AF0" wsp:rsidRDefault="00C146CA" wsp:rsidP="00C146CA">
@@ -1019,7 +1019,7 @@
         <w:rPr>
           <w:rStyle w:val="FromTo"/>
         </w:rPr>
-        <w:t>Jul 2017 — Feb 2020</w:t>
+        <w:t>Jul 2017 - Feb 2020</w:t>
       </w:r>
     </w:p>
     <w:p wsp:rsidR="00C146CA" wsp:rsidRPr="000A3AF0" wsp:rsidRDefault="00C146CA" wsp:rsidP="00C146CA">
@@ -1106,7 +1106,7 @@
         <w:rPr>
           <w:rStyle w:val="FromTo"/>
         </w:rPr>
-        <w:t>Apr 2016 — Jul 2017</w:t>
+        <w:t>Apr 2016 - Jul 2017</w:t>
       </w:r>
     </w:p>
     <w:p wsp:rsidR="00C146CA" wsp:rsidRPr="000A3AF0" wsp:rsidRDefault="00C146CA" wsp:rsidP="00C146CA">
@@ -1178,7 +1178,7 @@
         <w:rPr>
           <w:rStyle w:val="FromTo"/>
         </w:rPr>
-        <w:t>May 2014 — Apr 2016</w:t>
+        <w:t>May 2014 - Apr 2016</w:t>
       </w:r>
     </w:p>
     <w:p wsp:rsidR="00C146CA" wsp:rsidRPr="000A3AF0" wsp:rsidRDefault="00C146CA" wsp:rsidP="00C146CA">
@@ -1250,7 +1250,7 @@
         <w:rPr>
           <w:rStyle w:val="FromTo"/>
         </w:rPr>
-        <w:t>May 2010 — Jun 2013</w:t>
+        <w:t>May 2010 - Jun 2013</w:t>
       </w:r>
     </w:p>
     <w:p wsp:rsidR="00C146CA" wsp:rsidRPr="000A3AF0" wsp:rsidRDefault="00C146CA" wsp:rsidP="00C146CA">
@@ -1367,7 +1367,7 @@
         <w:rPr>
           <w:rStyle w:val="FromTo"/>
         </w:rPr>
-        <w:t>May 2010 — Jun 2013</w:t>
+        <w:t>May 2010 - Jun 2013</w:t>
       </w:r>
     </w:p>
     <w:p wsp:rsidR="00C146CA" wsp:rsidRPr="000A3AF0" wsp:rsidRDefault="00C146CA" wsp:rsidP="00C146CA">
@@ -1514,7 +1514,7 @@
         <w:rPr>
           <w:rStyle w:val="FromTo"/>
         </w:rPr>
-        <w:t>Jun 2007 — May 2009</w:t>
+        <w:t>Jun 2007 - May 2009</w:t>
       </w:r>
     </w:p>
     <w:p wsp:rsidR="00C146CA" wsp:rsidRPr="000A3AF0" wsp:rsidRDefault="00C146CA" wsp:rsidP="00C146CA">
@@ -1613,7 +1613,7 @@
         <w:rPr>
           <w:rStyle w:val="FromTo"/>
         </w:rPr>
-        <w:t>Jun 2006 — Apr 2007</w:t>
+        <w:t>Jun 2006 - Apr 2007</w:t>
       </w:r>
     </w:p>
     <w:p wsp:rsidR="00C146CA" wsp:rsidRPr="000A3AF0" wsp:rsidRDefault="00C146CA" wsp:rsidP="00C146CA">
@@ -1712,7 +1712,7 @@
         <w:rPr>
           <w:rStyle w:val="FromTo"/>
         </w:rPr>
-        <w:t>Nov 2005 — Aug 2006</w:t>
+        <w:t>Nov 2005 - Aug 2006</w:t>
       </w:r>
     </w:p>
     <w:p wsp:rsidR="00C146CA" wsp:rsidRPr="000A3AF0" wsp:rsidRDefault="00C146CA" wsp:rsidP="00C146CA">
@@ -1796,7 +1796,7 @@
         <w:rPr>
           <w:rStyle w:val="FromTo"/>
         </w:rPr>
-        <w:t>Aug 2005 — Nov 2006</w:t>
+        <w:t>Aug 2005 - Nov 2006</w:t>
       </w:r>
     </w:p>
     <w:p wsp:rsidR="00C146CA" wsp:rsidRPr="000A3AF0" wsp:rsidRDefault="00C146CA" wsp:rsidP="00C146CA">
@@ -1865,7 +1865,7 @@
         <w:rPr>
           <w:rStyle w:val="FromTo"/>
         </w:rPr>
-        <w:t>Nov 2004 — Aug 2005</w:t>
+        <w:t>Nov 2004 - Aug 2005</w:t>
       </w:r>
     </w:p>
     <w:p wsp:rsidR="00C146CA" wsp:rsidRPr="000A3AF0" wsp:rsidRDefault="00C146CA" wsp:rsidP="00C146CA">
@@ -1964,7 +1964,7 @@
         <w:rPr>
           <w:rStyle w:val="FromTo"/>
         </w:rPr>
-        <w:t>Jul 2004 — Oct 2004</w:t>
+        <w:t>Jul 2004 - Oct 2004</w:t>
       </w:r>
     </w:p>
     <w:p wsp:rsidR="00C146CA" wsp:rsidRPr="000A3AF0" wsp:rsidRDefault="00C146CA" wsp:rsidP="00C146CA">
@@ -2033,7 +2033,7 @@
         <w:rPr>
           <w:rStyle w:val="FromTo"/>
         </w:rPr>
-        <w:t>Oct 2002 — Jun 2004</w:t>
+        <w:t>Oct 2002 - Jun 2004</w:t>
       </w:r>
     </w:p>
     <w:p wsp:rsidR="00C146CA" wsp:rsidRPr="000A3AF0" wsp:rsidRDefault="00C146CA" wsp:rsidP="00C146CA">
@@ -2132,7 +2132,7 @@
         <w:rPr>
           <w:rStyle w:val="FromTo"/>
         </w:rPr>
-        <w:t>May 2001 — Oct 2002</w:t>
+        <w:t>May 2001 - Oct 2002</w:t>
       </w:r>
     </w:p>
     <w:p wsp:rsidR="00C146CA" wsp:rsidRPr="000A3AF0" wsp:rsidRDefault="00C146CA" wsp:rsidP="00C146CA">
@@ -2248,7 +2248,7 @@
         <w:rPr>
           <w:rStyle w:val="FromTo"/>
         </w:rPr>
-        <w:t>??? — Present</w:t>
+        <w:t>??? - Present</w:t>
       </w:r>
     </w:p>
     <w:p wsp:rsidR="00C146CA" wsp:rsidRPr="000A3AF0" wsp:rsidRDefault="00C146CA" wsp:rsidP="00C146CA">
@@ -2290,7 +2290,7 @@
         <w:rPr>
           <w:rStyle w:val="FromTo"/>
         </w:rPr>
-        <w:t>2013-09 — Present</w:t>
+        <w:t>2013-09 - Present</w:t>
       </w:r>
     </w:p>
     <w:p wsp:rsidR="00C146CA" wsp:rsidRPr="000A3AF0" wsp:rsidRDefault="00C146CA" wsp:rsidP="00C146CA">
@@ -2392,7 +2392,7 @@
         <w:rPr>
           <w:rStyle w:val="FromTo"/>
         </w:rPr>
-        <w:t>2009-09 — Present</w:t>
+        <w:t>2009-09 - Present</w:t>
       </w:r>
     </w:p>
     <w:p wsp:rsidR="00C146CA" wsp:rsidRPr="000A3AF0" wsp:rsidRDefault="00C146CA" wsp:rsidP="00C146CA">
@@ -2464,7 +2464,7 @@
         <w:rPr>
           <w:rStyle w:val="FromTo"/>
         </w:rPr>
-        <w:t>2009-09 — Present</w:t>
+        <w:t>2009-09 - Present</w:t>
       </w:r>
     </w:p>
     <w:p wsp:rsidR="00C146CA" wsp:rsidRPr="000A3AF0" wsp:rsidRDefault="00C146CA" wsp:rsidP="00C146CA">
@@ -2566,7 +2566,7 @@
         <w:rPr>
           <w:rStyle w:val="FromTo"/>
         </w:rPr>
-        <w:t>1994 — 1998</w:t>
+        <w:t>1994 - 1998</w:t>
       </w:r>
     </w:p>
     <w:p wsp:rsidR="00C146CA" wsp:rsidRPr="000A3AF0" wsp:rsidRDefault="00C146CA" wsp:rsidP="00C146CA">

@@ -54,7 +54,7 @@ h3 {
   margin-top: 0;
   margin-bottom: 2px;
   /*width: 85%;*/
-  float: left;
+  /* float: left; */
 }
 
 table {
@@ -116,14 +116,18 @@ p, li {
 }
 
 .tenure {
-  float: right;
+  /* float: right; */
   color: #6F6F6F;
-  background-color: #F5F5F5;
+  /* background-color: #F5F5F5; */
   border-radius: 6px;
   padding: 4px 6px;
   font-size: 85%;
   font-weight: 600;
   margin-top: 3px;
+}
+
+h3 + .tenure {
+  margin-bottom: 1em;
 }
 
 .location {
@@ -169,11 +173,22 @@ h1, h2, .label {
 
 #contact {
  clear: both;
- float: right;
+ float: left;
  margin-top: 2px;
 }
 
 #contact span + span {
+  margin-left: 10px;
+}
+
+#social {
+ /* clear: both; */
+ float: right;
+ margin-top: 2px;
+text-align: right;
+}
+
+#social span + span {
   margin-left: 10px;
 }
 

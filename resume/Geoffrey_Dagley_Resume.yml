@@ -5,21 +5,20 @@ meta:
 info:
   label: 'Develop | Lead | Innovate'
   characterClass: Programmer
-  brief: '20+ years of experience developing for all aspects and scales of web and mobile applications, leading remote teams building massively distributed applications, and innovating with over 50 patents for new and upcoming ideas. Involved in all stages of the software development life cycle, both in startups and in enterprise environments, providing direction with new and emerging open source technologies'
+  brief: '20+ years of experience developing for all aspects and scales of web and mobile applications, leading remote teams building massively distributed applications, and innovating with over 75 patents for new and upcoming ideas. Involved in all stages of the software development life cycle, both in startups and in enterprise environments, providing direction with new and emerging open source technologies'
   image: bw_photo.jpg
 contact:
-  website: 'http://www.geoffreydagley.com'
+  website:
+    label: geoffreydagley.com
+    value: 'https://www.geoffreydagley.com'
   phone: 469-742-1130
   email: gdagley@gmail.com
-  github:
+  linkedin:
     label: 'LinkedIn: @gdagley'
-    flavor: IM
-    value: 'https://linkedin.com/gdagley'
-  other:
-    -
-      label: Skype
-      flavor: IM
-      value: gdagley
+    value: 'https://linkedin.com/in/gdagley'
+  github:
+    label: 'GitHub: @gdagley'
+    value: 'https://github.com/gdagley'
 location:
   address: '2412 Truro  Dr'
   city: McKinney
@@ -60,7 +59,7 @@ employment:
         - Jenkins
         - Github
       highlights:
-        - 'Remotely managed multiple teams building and growing the Capital One Leads Navigator and Showroom products'
+        - 'Remotely managed multiple agile teams, building and growing the Capital One Leads Navigator and Showroom products'
         - 'Developed self sufficient teams delivering new features, while keeping software and infrastructure up to Capital One''s high standards'
         - 'Worked closely with product partners to define and prioritize product and technical initiatives'
         - 'Actively involved in the technical interviewing process, both as an interviewer and as a mentor to new interviewers'
