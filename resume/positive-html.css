@@ -1,7 +1,7 @@
 html, body, main, section, header, ul, p, h1, h2, h3 {
   font-family: 'Open Sans', 'sans-serif';
   font-size: 12px;
-  line-height: 1.2;
+  line-height: 1.5;
   margin: 0; padding: 0;
   display: block;
 }
@@ -116,7 +116,7 @@ p, li {
 }
 
 .tenure {
-  /* float: right; */
+  float: right;
   color: #6F6F6F;
   /* background-color: #F5F5F5; */
   border-radius: 6px;
@@ -164,7 +164,7 @@ h1 {
   float: left;
 }
 
-h1, h2, .label {
+h1, h2 {
   font-size: 2em;
   text-transform: uppercase;
   font-weight: 300;
@@ -205,14 +205,21 @@ header > span.fa {
 }
 
 .label {
-  float: right;
-  color: #898989;
+  color: #000;
+  display: block;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Lato', 'sans-serif'
+
 }
 
 #summary {
   color: #717171;
   font-size: 1.25em;
-  margin-top: 6em;
+}
+
+#skills {
+  line-height: 1;
 }
 
 #skills td {

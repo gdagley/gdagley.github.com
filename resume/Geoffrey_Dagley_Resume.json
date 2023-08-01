@@ -1,10 +1,10 @@
 {
   "basics": {
-    "label": "Develop | Lead | Innovate",
-    "characterClass": "Programmer",
+    "label": "Developer | Leader | Innovator",
+    "characterClass": "Director",
     "website": {
       "label": "geoffreydagley.com",
-      "value": "https://www.geoffreydagley.com"
+      "value": "https://geoffreydagley.com"
     },
     "phone": "469-742-1130",
     "email": "gdagley@gmail.com",
@@ -17,7 +17,7 @@
       "value": "https://github.com/gdagley"
     },
     "name": "Geoffrey Dagley",
-    "summary": "20+ years of experience developing for all aspects and scales of web and mobile applications, leading remote teams building massively distributed applications, and innovating with over 75 patents for new and upcoming ideas. Involved in all stages of the software development life cycle, both in startups and in enterprise environments, providing direction with new and emerging open source technologies",
+    "summary": "25+ years of experience developing for all aspects and scales of web and mobile applications, leading remote teams building massively distributed applications, and innovating with over 75 patents for new and upcoming ideas. Involved in all stages of the software development life cycle, both in startups and in enterprise environments, providing direction with new and emerging open source technologies, including",
     "picture": "bw_photo.jpg",
     "profiles": [
       {

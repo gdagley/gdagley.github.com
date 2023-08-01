@@ -3,14 +3,14 @@ meta:
   format: FRESH@0.1.0
   version: 0.1.0
 info:
-  label: 'Develop | Lead | Innovate'
-  characterClass: Programmer
-  brief: '20+ years of experience developing for all aspects and scales of web and mobile applications, leading remote teams building massively distributed applications, and innovating with over 75 patents for new and upcoming ideas. Involved in all stages of the software development life cycle, both in startups and in enterprise environments, providing direction with new and emerging open source technologies'
+  label: 'Developer | Leader | Innovator'
+  characterClass: Director
+  brief: '25+ years of experience developing for all aspects and scales of web and mobile applications, leading remote teams building massively distributed applications, and innovating with over 75 patents for new and upcoming ideas. Involved in all stages of the software development life cycle, both in startups and in enterprise environments, providing direction with new and emerging open source technologies, including'
   image: bw_photo.jpg
 contact:
   website:
     label: geoffreydagley.com
-    value: 'https://www.geoffreydagley.com'
+    value: 'https://geoffreydagley.com'
   phone: 469-742-1130
   email: gdagley@gmail.com
   linkedin:

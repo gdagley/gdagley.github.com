@@ -4,7 +4,7 @@ Email: gdagley@gmail.com
 Tel: 469-742-1130
 Web: [object Object]
 
-20+ years of experience developing for all aspects and scales of web and mobile applications, leading remote teams building massively distributed applications, and innovating with over 75 patents for new and upcoming ideas. Involved in all stages of the software development life cycle, both in startups and in enterprise environments, providing direction with new and emerging open source technologies
+25+ years of experience developing for all aspects and scales of web and mobile applications, leading remote teams building massively distributed applications, and innovating with over 75 patents for new and upcoming ideas. Involved in all stages of the software development life cycle, both in startups and in enterprise environments, providing direction with new and emerging open source technologies, including
 
 ## SKILLS
 
@@ -15,7 +15,7 @@ Web: [object Object]
   - Databases: AWS DynamoDB Postgres MySql Redis memcache 
   - OS: AWS Mac OS X iOS Android Windows Unix 
 
-## Work
+## Experience
 
 ### *Director, Software Engineering*, [Capital One](http://www.capitalone.com) (2022-02 - Present)
 

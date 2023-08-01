@@ -10,7 +10,7 @@
   <style>html, body, main, section, header, ul, p, h1, h2, h3 {
   font-family: 'Open Sans', 'sans-serif';
   font-size: 12px;
-  line-height: 1.2;
+  line-height: 1.5;
   margin: 0; padding: 0;
   display: block;
 }
@@ -125,7 +125,7 @@ p, li {
 }
 
 .tenure {
-  /* float: right; */
+  float: right;
   color: #6F6F6F;
   /* background-color: #F5F5F5; */
   border-radius: 6px;
@@ -173,7 +173,7 @@ h1 {
   float: left;
 }
 
-h1, h2, .label {
+h1, h2 {
   font-size: 2em;
   text-transform: uppercase;
   font-weight: 300;
@@ -214,14 +214,22 @@ header > span.fa {
 }
 
 .label {
-  float: right;
-  color: #898989;
+  color: #000;
+  display: block;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Lato', 'sans-serif'
+
 }
 
 #summary {
   color: #717171;
   font-size: 1.25em;
   margin-top: 3em;
+}
+
+#skills {
+  line-height: 1.1;
 }
 
 #skills td {
@@ -243,35 +251,29 @@ header > span.fa {
 <body>
   <main>
     <header>
-      <h1>Geoffrey Dagley</h1>
-      <span class="label">Develop | Lead | Innovate</span>
+      <h1>Geoffrey <span style="color: #C00000;">Dagley</span></h1>
       <div id="contact">
-        <span class="phone">McKinney, TX</span><br />
-        <span class="phone">469-742-1130</span><br />
+        McKinney, TX | 
+        469-742-1130 | 
         <span class="email"><a href="mailto:gdagley@gmail.com">gdagley@gmail.com</a></span><br />
       </div>
-      <div id="social">
-        <span class="website"><a
-            href="https://www.geoffreydagley.com">geoffreydagley.com</a></span><br />
-        <span class="website"><a
-            href="https://github.com/gdagley">GitHub: @gdagley</a></span><br />
-        <span class="website"><a
-            href="https://linkedin.com/in/gdagley">LinkedIn: @gdagley</a></span><br />
+      <div id="contact">
+        <a href="https://geoffreydagley.com">https://geoffreydagley.com</a> <br/> 
+        <a href="https://github.com/gdagley">https://github.com/gdagley</a> <br/> 
+        <a href="https://linkedin.com/in/gdagley">https://linkedin.com/in/gdagley</a>
       </div>
     </header>
 
 
     <section id="summary">
-      20+ years of experience developing for all aspects and scales of web and mobile applications, leading remote teams building massively distributed applications, and innovating with over 75 patents for new and upcoming ideas. Involved in all stages of the software development life cycle, both in startups and in enterprise environments, providing direction with new and emerging open source technologies
+      <span class="label">Developer | Leader | Innovator</span>
+      25+ years of experience developing for all aspects and scales of web and mobile applications, leading remote teams building massively distributed applications, and innovating with over 75 patents for new and upcoming ideas. Involved in all stages of the software development life cycle, both in startups and in enterprise environments, providing direction with new and emerging open source technologies, including
     </section>
 
 
     
     <hr>
     <section id="skills">
-        <header>
-          <span class="fa fa-lg fa-code"></span>  <h2>skills</h2>
-        </header>
       <table>
         <thead>
           <tr>
@@ -282,27 +284,27 @@ header > span.fa {
         <tbody>
           <tr>
             <td style="width: 25%;">Languages</td>
-            <td class="keywords">Dart JavaScript Ruby Java Obj-C C# Python Lua SQL UML </td>
+            <td class="keywords">Dart, JavaScript, Ruby, Java, Obj-C, C#, Python, Lua, SQL, UML</td>
           </tr>
           <tr>
             <td style="width: 25%;">Mobile</td>
-            <td class="keywords">AWS Amplify Flutter iOS Android Unity Corona Ionic Rubymotion </td>
+            <td class="keywords">AWS Amplify, Flutter, iOS, Android, Unity, Corona, Ionic, Rubymotion</td>
           </tr>
           <tr>
             <td style="width: 25%;">Web</td>
-            <td class="keywords">AWS Amplify React Ruby on Rails JQuery Angular HTML CSS </td>
+            <td class="keywords">AWS Amplify, React, Ruby on Rails, JQuery, Angular, HTML, CSS</td>
           </tr>
           <tr>
             <td style="width: 25%;">Java/J2EE</td>
-            <td class="keywords">Android Java Spring </td>
+            <td class="keywords">Android, Java, Spring</td>
           </tr>
           <tr>
             <td style="width: 25%;">Databases</td>
-            <td class="keywords">AWS DynamoDB Postgres MySql Redis memcache </td>
+            <td class="keywords">AWS DynamoDB, Postgres, MySql, Redis, memcache</td>
           </tr>
           <tr>
             <td style="width: 25%;">OS</td>
-            <td class="keywords">AWS Mac OS X iOS Android Windows Unix </td>
+            <td class="keywords">AWS, Mac OS X, iOS, Android, Windows, Unix</td>
           </tr>
         </tbody>
       </table>
@@ -312,13 +314,14 @@ header > span.fa {
     <hr>
     <section id="employment">
         <header>
-          <span class="fa fa-lg fa-building"></span>  <h2>Work</h2>
+          <span class="fa fa-lg fa-building"></span>  <h2>Experience</h2>
         </header>
         <div>
-          <h3><em>Director, Software Engineering</em><br/>
-            <a href="http://www.capitalone.com">Capital One</a>
+          <h3>Capital One<br/>
+            <em>Director, Software Engineering</em>
+            <span class="tenure">Feb 2022 - Present</span>
             </h3>
-            <p class="tenure">Feb 2022 - Present</p>
+            
             
           <p></p>
           <ul>
@@ -327,26 +330,26 @@ header > span.fa {
             <li>Collaborated closely with product partners to define and prioritize product and technical initiatives, ensuring alignment with business goals and objectives.</li>
             <li>Actively involved in the technical interviewing process, serving as both an interviewer and mentor to new interviewers, to ensure the selection of top talent.</li>
           </ul>
-          <span class="keywords">Java, Spring, NodeJS, AWS, Jenkins, Github </span>
         </div>
         <div>
-          <h3><em>Sr Manager, Software Engineering</em><br/>
-            <a href="http://www.capitalone.com">Capital One</a>
+          <h3>Capital One<br/>
+            <em>Sr Manager, Software Engineering</em>
+            <span class="tenure">Feb 2020 - Feb 2022</span>
             </h3>
-            <p class="tenure">Feb 2020 - Feb 2022</p>
+            
             
           <p></p>
           <ul>
             <li>Led multiple teams of engineers through the acquisition of Carvoy.com, and successfully re-implemented Carvoy IP using the Capital One technology stack within 9 months. </li>
             <li>Oversaw the technical growth of Leads Navigator to be used by over 3500 dealerships and $1B in originations, ensuring seamless integration with existing systems.</li>
           </ul>
-          <span class="keywords">Java, Spring, NodeJS, AWS, Jenkins, Github </span>
         </div>
         <div>
-          <h3><em>Lead Software Engineer</em><br/>
-            <a href="http://www.capitalone.com">Capital One</a>
+          <h3>Capital One<br/>
+            <em>Lead Software Engineer</em>
+            <span class="tenure">Jul 2017 - Feb 2020</span>
             </h3>
-            <p class="tenure">Jul 2017 - Feb 2020</p>
+            
             
           <p></p>
           <ul>
@@ -354,39 +357,39 @@ header > span.fa {
             <li>Developed a proof-of-concept augmented reality iOS app that used machine learning to create a unique car buying experience, which was showcased at SxSW 2018 and later released as the Capital One Auto Navigator app, showcasing technical and innovation skills.</li>
             <li>Developed new ways to enhance the Auto Navigator search experience, continuously improving the user experience.</li>
           </ul>
-          <span class="keywords">Swift, CoreML, ARKit, Python, Java, Spring, NodeJS, AWS, Jenkins, Github </span>
         </div>
         <div>
-          <h3><em>Programmer</em><br/>
-            <a href="http://www.magicleap.com">Magic Leap</a>
+          <h3>Magic Leap<br/>
+            <em>Programmer</em>
+            <span class="tenure">Apr 2016 - Jul 2017</span>
             </h3>
-            <p class="tenure">Apr 2016 - Jul 2017</p>
+            
             
           <p></p>
           <ul>
             <li>Prototyped a variety of XR experiences for the Magic Leap One using agile methodologies to ensure a streamlined development process. </li>
             <li>Built a prototyping tool to randomly generate rooms for testing AR experiences, which helped to identify and fix issues early in the SDLC.</li>
           </ul>
-          <span class="keywords">AR/MR/XR, Unity, C# </span>
         </div>
         <div>
-          <h3><em>Programmer</em><br/>
-            <a href="http://www.fuzzycubesoftware.com">FuzzyCube Software</a>
+          <h3>FuzzyCube Software<br/>
+            <em>Programmer</em>
+            <span class="tenure">May 2014 - Apr 2016</span>
             </h3>
-            <p class="tenure">May 2014 - Apr 2016</p>
+            
             
           <p></p>
           <ul>
             <li>Developed and launched the mobile game &quot;Tap It Big&quot; on iOS and Android using the Unity cross-platform toolset, applying best practices in software development and project management to meet the launch deadline of 11/2015.</li>
             <li>Led the development of the backend services for an unreleased cross-platform game, including leaderboards, friends, and in-app purchases, using Ruby to create REST-like APIs.</li>
           </ul>
-          <span class="keywords">Ruby, Grape, RSpec, Unity, C#, Postgres, memcache, Redis, git </span>
         </div>
         <div>
-          <h3><em>Lead, Backend Services</em><br/>
-            <a href="http://www.zynga.com">Newtoy/Zynga With Friends</a>
+          <h3>Newtoy/Zynga With Friends<br/>
+            <em>Lead, Backend Services</em>
+            <span class="tenure">May 2010 - Jun 2013</span>
             </h3>
-            <p class="tenure">May 2010 - Jun 2013</p>
+            
             
           <p></p>
           <ul>
@@ -394,13 +397,13 @@ header > span.fa {
             <li>Coordinated the migration of the service to two different data centers within a year due to the Zynga acquisition, with minimal disruption to players. </li>
             <li>Grew the With Friends Backend Service from initially supporting Chess and Words to being able to support any new With Friends style game that Zynga wanted to develop, driving significant revenue growth.</li>
           </ul>
-          <span class="keywords">Ruby on Rails, RSpec, Cocos2d-x, Lua, MySQL, memcache, Redis, git </span>
         </div>
         <div>
-          <h3><em>Owner</em><br/>
-            <a href="http://www.geoffreydagley.com">McKinney Station</a>
+          <h3>McKinney Station<br/>
+            <em>Owner</em>
+            <span class="tenure">May 2010 - Jun 2013</span>
             </h3>
-            <p class="tenure">May 2010 - Jun 2013</p>
+            
             
           <p></p>
           <ul>
@@ -412,13 +415,13 @@ header > span.fa {
             <li>Developed a Ruby on Rails trip planner to compare the cost of driving, flying commercial, and chartering a flight using Google Maps for trip mapping and geocoding for WedgeTravel.com.</li>
             <li>Applied look and feel from Photoshop mockups to a functioning Ruby on Rails application and implemented various aspects of the navigation system and catalog for SchoolBates.com.</li>
           </ul>
-          <span class="keywords">Ruby on Rails, HTML, CSS, JavaScript, Capistrano, RSpec, JQuery, Corona, Lua, Rubymotion, Java, Android, MySQL, git, Subversion </span>
         </div>
         <div>
-          <h3><em>Programmer</em><br/>
-            <a href="http://www.thinkrelevance.com">Relevance, Inc.</a>
+          <h3>Relevance, Inc.<br/>
+            <em>Programmer</em>
+            <span class="tenure">Jun 2007 - May 2009</span>
             </h3>
-            <p class="tenure">Jun 2007 - May 2009</p>
+            
             
           <p></p>
           <ul>
@@ -426,13 +429,13 @@ header > span.fa {
             <li>One of two primary developers to build a new product for Essi Systems called 21 DayClub.com, which includes tools for personal change management and personal assessments for evaluating.</li>
             <li>One of two primary developers to build an online classified system for radio stations in markets across the US for Fizmo.com</li>
           </ul>
-          <span class="keywords">Ruby on Rails, HTML, CSS, JavaScript, Capistrano, RSpec, JQuery, MySQL, git, Subversion </span>
         </div>
         <div>
-          <h3><em>Contract Software Developer</em><br/>
-            Southwest Airlines
+          <h3>Southwest Airlines<br/>
+            <em>Contract Software Developer</em>
+            <span class="tenure">Jun 2006 - Apr 2007</span>
             </h3>
-            <p class="tenure">Jun 2006 - Apr 2007</p>
+            
             
           <p></p>
           <ul>
@@ -440,38 +443,38 @@ header > span.fa {
             <li>Automated testing using JUnit to verify test cases defined in design documents, including using mock objects to test interfaces when component implementation did not exist, to ensure software quality and efficiency.</li>
             <li>Used an IDL(Interface Definition Language) to define business service definitions, streamlining the communication process between different components of the system.</li>
           </ul>
-          <span class="keywords">Java, JUnit, MockObjects, IDL, Eclipse, ClearCase </span>
         </div>
         <div>
-          <h3><em>Contract Software Developer</em><br/>
-            EDS
+          <h3>EDS<br/>
+            <em>Contract Software Developer</em>
+            <span class="tenure">Nov 2005 - Aug 2006</span>
             </h3>
-            <p class="tenure">Nov 2005 - Aug 2006</p>
+            
             
           <p></p>
           <ul>
             <li>Designed and implemented a new web-based application for MCI for provisioning virtual trunks, which included overall architecture of web-tier of the application and integration with existing server architecture.</li>
             <li>Jumpstarted a team of 5 developers that did not have any prior experience developing Java Struts web applications, using effective communication and leadership skills to ensure a smooth transition.</li>
           </ul>
-          <span class="keywords">Java, JSP, Struts, JSTL, Tomcat, SQL, Oracle, MySQL, Eclipse, StarTeam </span>
         </div>
         <div>
-          <h3><em>Contract Software Developer</em><br/>
-            Navigator Systems
+          <h3>Navigator Systems<br/>
+            <em>Contract Software Developer</em>
+            <span class="tenure">Aug 2005 - Nov 2006</span>
             </h3>
-            <p class="tenure">Aug 2005 - Nov 2006</p>
+            
             
           <p></p>
           <ul>
             <li>Designed and implemented enhancements to web-based sales applications for FritoLay, which included resolving existing defects and providing performance enhancements to the applications.</li>
           </ul>
-          <span class="keywords">Java, JSP, Struts, JSTL, Toplink, Tomcat, Weblogic, SQL, WebLogic, DB2, Eclipse, StarTeam </span>
         </div>
         <div>
-          <h3><em>Software Engineer</em><br/>
-            ZMS Technologies, Inc.
+          <h3>ZMS Technologies, Inc.<br/>
+            <em>Software Engineer</em>
+            <span class="tenure">Nov 2004 - Aug 2005</span>
             </h3>
-            <p class="tenure">Nov 2004 - Aug 2005</p>
+            
             
           <p></p>
           <ul>
@@ -479,38 +482,38 @@ header > span.fa {
             <li>Researched and provided direction for technologies(Spring, Hibernate, WebStart) used in the current development of transportation management software, demonstrating expertise in software integration and technical leadership.</li>
             <li>Analyzed, maintained, and enhanced components for transportation management J2EE web application based on customer requirements, demonstrating expertise in software development and problem-solving skills.</li>
           </ul>
-          <span class="keywords">Java, EJB, Hibernate, Spring, JBoss, SQL, JDBC, JasperReports, XML, ant, xdoclet, MySQL, CruiseControl, TrackPlus, JSPWiki, JUnit, Emma (code coverage), Checkstyle (code standards testing), WebLogic, MySQL, Oracle 9i, Intellij, Eclipse, CVS </span>
         </div>
         <div>
-          <h3><em>Software Engineer</em><br/>
-            NextJet, Inc.
+          <h3>NextJet, Inc.<br/>
+            <em>Software Engineer</em>
+            <span class="tenure">Jul 2004 - Oct 2004</span>
             </h3>
-            <p class="tenure">Jul 2004 - Oct 2004</p>
+            
             
           <p></p>
           <ul>
             <li>Analyzed, maintained, and enhanced components for J2EE web application based on customer bug reports and enhancement requests, demonstrating expertise in software maintenance and customer support.</li>
           </ul>
-          <span class="keywords">Java, J2EE, EJB, CMP, BMP, SQL, JDBC, JSP, Struts, XML, Weblogic, ant, Intellij </span>
         </div>
         <div>
-          <h3><em>Application Architect</em><br/>
-            Parago, Inc
+          <h3>Parago, Inc<br/>
+            <em>Application Architect</em>
+            <span class="tenure">Oct 2002 - Jun 2004</span>
             </h3>
-            <p class="tenure">Oct 2002 - Jun 2004</p>
+            
             
           <p></p>
           <ul>
             <li>Analyzed and designed components for mission-critical, enterprise-wide J2EE web application.</li>
             <li>Led a team of 5 developers in building a Check Fulfillment component, which involved developing a web client interface based on discussions with the business owners, followed by deploying and performance tuning the application on JBoss application server.</li>
           </ul>
-          <span class="keywords">Java, J2EE, EJB, CMP, BMP, SQL, JDBC, JSP, JSTL, Struts, XML, JBoss, Tomcat, log4j, UML, ant, Oracle 8i, Intellij, ClearCase </span>
         </div>
         <div>
-          <h3><em>Instructor</em><br/>
-            Batky-Howell, Inc
+          <h3>Batky-Howell, Inc<br/>
+            <em>Instructor</em>
+            <span class="tenure">May 2001 - Oct 2002</span>
             </h3>
-            <p class="tenure">May 2001 - Oct 2002</p>
+            
             
           <p></p>
           <ul>
@@ -518,7 +521,6 @@ header > span.fa {
             <li>Developed courseware for new and developing technologies like SOAP and Web Services, showcasing a willingness to stay up-to-date with the latest industry developments.</li>
             <li>Edited and revised courseware as versions of software became available, including J2EE 1.2 and Java 1.3, highlighting a dedication to ongoing learning and professional development.</li>
           </ul>
-          <span class="keywords">Java, J2EE, EJB, CMP, BMP, MDB, JMS, SOAP, XML, XSLT, SAX, DOM, JDBC, SQL, JNDI, JSP, HTML, JavaScript, CSS, Tomcat </span>
         </div>
     </section>
 
@@ -531,17 +533,16 @@ header > span.fa {
         <div>
         <h3>
         <a href="https://www.github.com/gdagley">Open Source</a>
-        </h3>
         
+        </h3>
         <p>Various source projects on github.com through the years</p>
     
-            
         </div>
         <div>
         <h3>
         <a href="https://mibipi.com">mibipi.com</a>
+        <span class="tenure">2013-09 - Present</span>
         </h3>
-        <div class="tenure">Sep 2013 - Present</div>
         <p>Read through the Bible app available on iOS and Android</p>
     
         <ul>
@@ -550,33 +551,30 @@ header > span.fa {
           <li>Recently rewritten in Flutter and Dart using Bloc for state management</li>
           <li>Used AWS and Serverless Framework to optimize online retrieval of daily reading contnet</li>
         </ul>
-        <span class="keywords">Flutter, Dart, Bloc, iOS, Android, AWS, Lambda </span>    
         </div>
         <div>
         <h3>
         <a href="https://31DaypPrayerChallenge.com">31DayPrayerChallenge.com</a>
+        <span class="tenure">2009-09 - Present</span>
         </h3>
-        <div class="tenure">Sep 2009 - Present</div>
         <p>Mobile apps based on the 31 Day Prayer Challenges from mikeleake.net</p>
     
         <ul>
           <li>The original iOS apps were built with RubyMotion and the Android apps were built with Java</li>
           <li>Recently rewritten in Flutter and Dart using Bloc for state management</li>
         </ul>
-        <span class="keywords">Flutter, Dart, Bloc, iOS, Android </span>    
         </div>
         <div>
         <h3>
         <a href="https://CatechizeMe.com">CatechizeMe</a>
+        <span class="tenure">2009-09 - Present</span>
         </h3>
-        <div class="tenure">Sep 2009 - Present</div>
         <p>Mobile app to encourage learning church doctrine through catechisms.  <em>Launched: 11/2012</em></p>
     
         <ul>
           <li>The iOS app was built with RubyMotion and the Android app was build with Java</li>
           <li>Rewritten in Flutter and Dart using Bloc for state management</li>
         </ul>
-        <span class="keywords">Flutter, Dart, Bloc, iOS, Android </span>    
         </div>
     </section>
 
@@ -587,8 +585,7 @@ header > span.fa {
           <span class="fa fa-lg fa-mortar-board"></span>  <h2>education</h2>
         </header>
         <div>
-          <h3>Texas A&amp;M University</h3>
-          <span class="tenure">Sep 1994 - May 1998</span>
+          <h3>Texas A&amp;M University <span class="tenure">Sep 1994 - May 1998</span></h3>
           
           
           
@@ -616,18 +613,15 @@ header > span.fa {
           <span class="fa fa-lg fa-users"></span>  <h2>speaking</h2>
         </header>
         <div>
-        <h3><em>Scaling With Friends</em>, Rails Conf 2011</h3>
-        <span class="tenure">2011</span>
+        <h3><em>Scaling With Friends</em>, Rails Conf 2011 <span class="tenure">2011</span></h3>
         
         </div>
         <div>
-        <h3><em>Scaling With Friends</em>, Dallas Big Ruby 2013</h3>
-        <span class="tenure">2013</span>
+        <h3><em>Scaling With Friends</em>, Dallas Big Ruby 2013 <span class="tenure">2013</span></h3>
         
         </div>
         <div>
-        <h3><em>Failing With Friends</em>, Dallas Crosstrain 2014</h3>
-        <span class="tenure">2014</span>
+        <h3><em>Failing With Friends</em>, Dallas Crosstrain 2014 <span class="tenure">2014</span></h3>
         
         </div>
     </section>

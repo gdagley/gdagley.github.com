@@ -479,7 +479,7 @@
           <w:rPr>
             <w:color w:val="DADADA"/>
           </w:rPr>
-          <w:t>Develop | Lead | Innovate</w:t>
+          <w:t>Developer | Leader | Innovator</w:t>
         </w:r>
       </w:p>
       <w:p wsp:rsidR="00C146CA" wsp:rsidRDefault="00505903" wsp:rsidP="00C146CA">
@@ -530,7 +530,7 @@
         <w:pPr>
           <w:pStyle w:val="Summary"/>
         </w:pPr>
-        <w:r><w:rPr></w:rPr><w:t>20+ years of experience developing for all aspects and scales of web and mobile applications, leading remote teams building massively distributed applications, and innovating with over 75 patents for new and upcoming ideas. Involved in all stages of the software development life cycle, both in startups and in enterprise environments, providing direction with new and emerging open source technologies</w:t></w:r>
+        <w:r><w:rPr></w:rPr><w:t>25+ years of experience developing for all aspects and scales of web and mobile applications, leading remote teams building massively distributed applications, and innovating with over 75 patents for new and upcoming ideas. Involved in all stages of the software development life cycle, both in startups and in enterprise environments, providing direction with new and emerging open source technologies, including</w:t></w:r>
       </w:p>
       <wx:sub-section>
   <w:p wsp:rsidR="00C146CA" wsp:rsidRPr="00C146CA" wsp:rsidRDefault="00C146CA" wsp:rsidP="00C146CA">
@@ -798,7 +798,7 @@
             </w:pict>
           </w:r>
           <w:r wsp:rsidR="00C146CA" wsp:rsidRPr="00C146CA">
-            <w:t>Work</w:t>
+            <w:t>Experience</w:t>
           </w:r>
         </w:p>
       </wx:pBdrGroup>
