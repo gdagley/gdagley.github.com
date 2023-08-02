@@ -391,12 +391,14 @@ education:
   history:
     -
       institution: 'Texas A&M University'
+      location: 'College Station, TX'
       area: 'Aerospace Engineering'
       url: 'https://engineering.tamu.edu/aerospace'
       start: 1994-09
       end: 1998-05
       grade: 3.4/4.0
       curriculum: []
+      summary: 'Bachelor of Science in Aerospace Engineering'
 skills:
   sets:
     -
@@ -465,7 +467,7 @@ skills:
   list: []
 projects:
   -
-    title: 'Open Source'
+    title: 'Open Source - github.com/gdagley'
     summary: 'Various source projects on github.com through the years'
     url: 'https://www.github.com/gdagley'
   -

@@ -121,7 +121,7 @@ Web: [object Object]
 
 ## PROJECTS
 
-### **, [Open Source](https://www.github.com/gdagley) (??? - Present)
+### **, [Open Source - github.com/gdagley](https://www.github.com/gdagley) (??? - Present)
 
 
 Various source projects on github.com through the years
@@ -163,6 +163,7 @@ Mobile app to encourage learning church doctrine through catechisms.  *Launched:
 
 ### [Texas A&M University](https://engineering.tamu.edu/aerospace) (1994-09 - 1998-05)
 
+Bachelor of Science in Aerospace Engineering
 
 
 

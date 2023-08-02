@@ -109,7 +109,7 @@ Instructor, Batky-Howell, Inc (2001-05 - 2002-10)
 
 PROJECTS -----------------------------------------------------------------------
 
-Open Source,  (??? - Present)
+Open Source - github.com/gdagley,  (??? - Present)
 
 Various source projects on github.com through the years
 
@@ -138,6 +138,7 @@ Mobile app to encourage learning church doctrine through catechisms.  *Launched:
 EDUCATION ----------------------------------------------------------------------
 
 Texas A&M University (1994-09 - 1998-05)
+Bachelor of Science in Aerospace Engineering
 
 
 
