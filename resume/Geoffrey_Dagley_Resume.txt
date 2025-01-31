@@ -1,151 +1,60 @@
-Geoffrey Dagley
-Email: gdagley@gmail.com
-Tel: 469-742-1130
-Web: https://geoffreydagley.com
-================================================================================
-
-
-25+ years of experience developing for all aspects and scales of web and mobile applications, leading remote teams building massively distributed applications, and innovating with over 75 patents for new and upcoming ideas. Involved in all stages of the software development life cycle, both in startups and in enterprise environments, providing direction with new and emerging open source technologies, including
-
-
-SKILLS -------------------------------------------------------------------------
-
-- Languages: Dart JavaScript Ruby Java Obj-C C# Python Lua SQL UML 
-- Mobile: AWS Amplify Flutter iOS Android Unity Corona Ionic Rubymotion 
-- Web: AWS Amplify React Ruby on Rails JQuery Angular HTML CSS 
-- Java/J2EE: Android Java Spring 
-- Databases: AWS DynamoDB Postgres MySql Redis memcache 
-- OS: AWS Mac OS X iOS Android Windows Unix 
-
-
-Experience ---------------------------------------------------------------------
-
-Director, Software Engineering, Capital One (2022-02 - Present)
-
-- Successfully managed multiple agile teams remotely, overseeing the development and growth of Capital One's Leads Navigator and Showroom products, utilizing Agile methodologies through the entire software development life cycle (SDLC).
-- Developed highly efficient and self-sufficient teams that delivered new features while ensuring adherence to Capital One's high software and infrastructure standards.
-- Collaborated closely with product partners to define and prioritize product and technical initiatives, ensuring alignment with business goals and objectives.
-- Actively involved in the technical interviewing process, serving as both an interviewer and mentor to new interviewers, to ensure the selection of top talent.
-
-Sr Manager, Software Engineering, Capital One (2020-02 - 2022-02)
-
-- Led multiple teams of engineers through the acquisition of Carvoy.com, and successfully re-implemented Carvoy IP using the Capital One technology stack within 9 months. 
-- Oversaw the technical growth of Leads Navigator to be used by over 3500 dealerships and $1B in originations, ensuring seamless integration with existing systems.
-
-Lead Software Engineer, Capital One (2017-07 - 2020-02)
-
-- Part of a research and development team exploring new technologies in financial services, identifying innovative solutions to drive business growth.
-- Developed a proof-of-concept augmented reality iOS app that used machine learning to create a unique car buying experience, which was showcased at SxSW 2018 and later released as the Capital One Auto Navigator app, showcasing technical and innovation skills.
-- Developed new ways to enhance the Auto Navigator search experience, continuously improving the user experience.
-
-Programmer, Magic Leap (2016-04 - 2017-07)
-
-- Prototyped a variety of XR experiences for the Magic Leap One using agile methodologies to ensure a streamlined development process. 
-- Built a prototyping tool to randomly generate rooms for testing AR experiences, which helped to identify and fix issues early in the SDLC.
-
-Programmer, FuzzyCube Software (2014-05 - 2016-04)
-
-- Developed and launched the mobile game "Tap It Big" on iOS and Android using the Unity cross-platform toolset, applying best practices in software development and project management to meet the launch deadline of 11/2015.
-- Led the development of the backend services for an unreleased cross-platform game, including leaderboards, friends, and in-app purchases, using Ruby to create REST-like APIs.
-
-Lead, Backend Services, Newtoy/Zynga With Friends (2010-05 - 2013-06)
-
-- Managed a remote team of developers that scaled the With Friends Backend Service using Ruby on Rails to support 10M+ daily users playing With Friends games 
-- Coordinated the migration of the service to two different data centers within a year due to the Zynga acquisition, with minimal disruption to players. 
-- Grew the With Friends Backend Service from initially supporting Chess and Words to being able to support any new With Friends style game that Zynga wanted to develop, driving significant revenue growth.
-
-Owner, McKinney Station (2010-05 - 2013-06)
-
-- Successfully updated a set of existing flash card apps for iOS and provided Android versions of the apps using the cross-platform Corona toolset for Knowsys.
-- Co-organized the Dallas Ruby User Group from 2006 to 2011, coordinating speakers, maintaining website, and facilitating community activities for Dallas Rubyists, such as the Ruby/Open Spaces track at Dallas Techfest 2009.
-- Developed and deployed the entire Ruby on Rails application for StagingTracks.com to connect model railroaders with area clubs, local shops, and upcoming shows, which receives 7500+ visitors a month.
-- Built an automated test suite using RSpec for ROOV.com and provided development support during final push to deployment for Beta release.
-- Migrated PHP based prospect management application to Ruby on Rails for the 7-R Ranch Internal Prospect Management application, completely RSpec driven development with Selenium based functional tests for the browser.
-- Developed a Ruby on Rails trip planner to compare the cost of driving, flying commercial, and chartering a flight using Google Maps for trip mapping and geocoding for WedgeTravel.com.
-- Applied look and feel from Photoshop mockups to a functioning Ruby on Rails application and implemented various aspects of the navigation system and catalog for SchoolBates.com.
-
-Programmer, Relevance, Inc. (2007-06 - 2009-05)
-
-- One of two primary developers to build, test, and deploy the community site for TradeKing.com, featuring custom blog, forum, and feed reader engines to tie back to their trading platform.
-- One of two primary developers to build a new product for Essi Systems called 21 DayClub.com, which includes tools for personal change management and personal assessments for evaluating.
-- One of two primary developers to build an online classified system for radio stations in markets across the US for Fizmo.com
-
-Contract Software Developer, Southwest Airlines (2006-06 - 2007-04)
-
-- Designed and implemented business services for Service Oriented Architecture(SOA), including Refunds and Group Deposit applications, using best practices in SDLC to ensure high-quality delivery.
-- Automated testing using JUnit to verify test cases defined in design documents, including using mock objects to test interfaces when component implementation did not exist, to ensure software quality and efficiency.
-- Used an IDL(Interface Definition Language) to define business service definitions, streamlining the communication process between different components of the system.
-
-Contract Software Developer, EDS (2005-11 - 2006-08)
-
-- Designed and implemented a new web-based application for MCI for provisioning virtual trunks, which included overall architecture of web-tier of the application and integration with existing server architecture.
-- Jumpstarted a team of 5 developers that did not have any prior experience developing Java Struts web applications, using effective communication and leadership skills to ensure a smooth transition.
-
-Contract Software Developer, Navigator Systems (2005-08 - 2006-11)
-
-- Designed and implemented enhancements to web-based sales applications for FritoLay, which included resolving existing defects and providing performance enhancements to the applications.
-
-Software Engineer, ZMS Technologies, Inc. (2004-11 - 2005-08)
-
-- Architected and implemented a Java WebStart fleet planning solution for small businesses, providing a development environment that included a one-step build-test-deploy process, continuous integration builds and nightly builds, bug tracking system, and development wiki for documentation, demonstrating expertise in software engineering and SDLC.
-- Researched and provided direction for technologies(Spring, Hibernate, WebStart) used in the current development of transportation management software, demonstrating expertise in software integration and technical leadership.
-- Analyzed, maintained, and enhanced components for transportation management J2EE web application based on customer requirements, demonstrating expertise in software development and problem-solving skills.
-
-Software Engineer, NextJet, Inc. (2004-07 - 2004-10)
-
-- Analyzed, maintained, and enhanced components for J2EE web application based on customer bug reports and enhancement requests, demonstrating expertise in software maintenance and customer support.
-
-Application Architect, Parago, Inc (2002-10 - 2004-06)
-
-- Analyzed and designed components for mission-critical, enterprise-wide J2EE web application.
-- Led a team of 5 developers in building a Check Fulfillment component, which involved developing a web client interface based on discussions with the business owners, followed by deploying and performance tuning the application on JBoss application server.
-
-Instructor, Batky-Howell, Inc (2001-05 - 2002-10)
-
-- Taught Java/J2EE programming classes for large customers including Boeing, MCI Worldcom, Nielsen Media Research, and Sprint, demonstrating expertise in both software development and teaching.
-- Developed courseware for new and developing technologies like SOAP and Web Services, showcasing a willingness to stay up-to-date with the latest industry developments.
-- Edited and revised courseware as versions of software became available, including J2EE 1.2 and Java 1.3, highlighting a dedication to ongoing learning and professional development.
-
-
-PROJECTS -----------------------------------------------------------------------
-
-Open Source - github.com/gdagley,  (??? - Present)
-
-Various source projects on github.com through the years
-
-mibipi.com,  (2013-09 - Present)
-
-Read through the Bible app available on iOS and Android
-- Originally written with RubyMotion for iOS
-- Later updated and released on iOS and Android using the Ionic cross platform toolset
-- Recently rewritten in Flutter and Dart using Bloc for state management
-- Used AWS and Serverless Framework to optimize online retrieval of daily reading contnet
-
-31DayPrayerChallenge.com,  (2009-09 - Present)
-
-Mobile apps based on the 31 Day Prayer Challenges from mikeleake.net
-- The original iOS apps were built with RubyMotion and the Android apps were built with Java
-- Recently rewritten in Flutter and Dart using Bloc for state management
-
-CatechizeMe,  (2009-09 - Present)
-
-Mobile app to encourage learning church doctrine through catechisms.  *Launched: 11/2012*
-- The iOS app was built with RubyMotion and the Android app was build with Java
-- Rewritten in Flutter and Dart using Bloc for state management
-
-
-
-EDUCATION ----------------------------------------------------------------------
-
-Texas A&M University (1994-09 - 1998-05)
+﻿Geoffrey Dagley
+gdagley@gmail.com | 469-742-1130 | geoffreydagley.com | linkedin.com/in/gdagley
+Senior engineering executive with 25+ years of experience building and scaling high-performing teams to develop market-defining web and mobile applications. Proven ability to recruit, mentor, and develop top engineering talent, foster a culture of collaboration and innovation, and create agile, efficient engineering organizations that drive business success.
+Team Leadership: Successfully scaled engineering organizations across startups and enterprises, implementing agile methodologies, cross-functional collaboration, and a strong engineering culture to accelerate product development, improve developer satisfaction, and optimize execution.
+Product Development: Led engineering efforts to bring cutting-edge digital products to market, contributing to 100+ patents in auto finance, e-commerce, data analytics, machine learning, and AR/XR. Expertise in translating business vision into scalable, high-impact technology solutions that enhance customer experience and drive competitive advantage.
+EXPERIENCE
+blockit (Feb 2024 - Present)
+VP of Engineering
+Engineering Team Growth & Leadership
+* Scaled the engineering organization from 6 to 28 engineers, QA, and data professionals, forming 7 cross-functional teams covering product development, EMR integration, customer support, QA, and data. Implemented a pod-based team structure to empower teams with clear ownership, faster decision-making, and a culture of accountability.
+* Invested in team development by launching Focus Fridays and Lunch & Learns, fostering a culture of continuous learning, innovation, and internal knowledge sharing that directly improved developer satisfaction and retention.
+Process & Operational Improvements
+* Dramatically improved efficiency, reducing average ticket resolution time from 40 days to 10 days by revamping the feature intake process, increasing stakeholder engagement, and setting clearer development priorities. These changes empowered teams to work more autonomously while improving responsiveness to customer needs.
+Technical Leadership & System Improvements
+* Proactively improved platform security and scalability by conducting a comprehensive infrastructure audit, identifying and mitigating vulnerabilities before they could impact customers. This effort laid a strong foundation for growth, operational resilience, and regulatory compliance.
+* Strengthened automated testing and observability systems to ensure deployment stability, prevent regressions, and proactively address performance issues. By improving alerting and monitoring, the team was able to reduce on-call disruptions, enhance engineering focus, and minimize customer downtime—directly improving reliability and user trust.
+Product & Delivery Excellence
+* Aligned engineering strategy with business goals to ensure that all development efforts delivered meaningful customer impact. Strengthened QA and product review processes to catch issues earlier, reduce production bugs, and elevate product reliability—directly improving customer satisfaction and retention.
+Strategic Leadership & Stakeholder Engagement
+* Successfully managed a custom development project for one of our largest clients, ensuring long-term sustainability, maintainability, and a seamless customer experience despite complex integrations.
+* Championed a culture of collaboration and operational excellence by breaking down silos between engineering, product, and operations. Led cross-functional initiatives to enhance team efficiency, create more transparent workflows, and elevate overall product quality—resulting in a more aligned and engaged engineering team.
+Capital One (July 2017 — Feb 2024)
+Director, Software Engineering, Credit Card (March 2023 — Feb 2024)
+* Led the convergence of multiple fraud detection decision engines into a unified platform, improving development efficiency, reducing operational complexity, and accelerating rule deployment.
+* Transformed four remote teams to proactively manage tech upgrades, security remediations, and microservices hygiene, resulting in lower operational costs and faster product deployments.
+Director, Software Engineering, Auto Finance (Feb 2022 — March 2023)
+* Expanded Capital One’s auto financing footprint to 6000+ dealerships by integrating financing tools into dealer websites using independently deployable micro frontends.
+* Led the expansion of Showroom, a white-labeled digital retail product, enhancing the car buying experience and increasing dealer adoption.
+* Coached and mentored five remote agile teams, transitioning from reactive work to a proactive development approach, fostering continuous delivery and leadership growth among 30+ engineers and managers.
+* Eliminated redundant technical debt across multiple applications by aligning product, design, and engineering teams, reducing transaction costs and improving system interoperability for dealer integrations.
+Senior Manager, Software Engineering, Auto Finance (Feb 2020 — Feb 2022)
+* Led a team of 15+ engineers through the acquisition and integration of Carvoy.com, incorporating its digital retail car buying experience into Capital One’s microservices-based architecture and cloud-first infrastructure.
+* Scaled leadership from 2 to 5 teams, overseeing the technical integration of Capital One’s direct dealer website platform, which facilitated $1B+ in auto financing originations across 3,500+ dealerships.
+Lead Software Engineer, Auto Finance (July 2017 — Feb 2020)
+* Led research and development efforts exploring emerging technologies in financial services, driving 75+ patents in machine learning, augmented reality, and AI-driven financial tools.
+* Designed and developed the AutoNavigator iOS app, integrating machine learning to allow customers to identify vehicles on the street and using augmented reality (AR) to suggest similar cars available for purchase nearby.
+* Enhanced AutoNavigator's search capabilities by leveraging Natural Language Processing (NLP) and machine learning to improve vehicle matching efficiency, reducing search times and increasing customer engagement.
+Early Career & Consulting Roles (1998 – 2017)
+* Magic Leap / Fuzzy Cube Software (2014 – 2017) – Developed mobile games for iOS/Android, built backend services, and prototyped new AR/XR experiences for Magic Leap One.
+* Newtoy/Zynga (Director, Backend Services, 2010 – 2013) – Scaled the backend for Words With Friends to 30M+ MAU, ensuring zero downtime during Zynga’s acquisition and migration. Led a remote team of 15+ engineers in building the With Friends backend platform, enabling multiple game launches.
+* Dallas Ruby User Group (Organizer, 2006 – 2011) – Founded and led the Dallas Ruby User Group, organizing meetups, coordinating speakers, and fostering a local developer community.
+* Independent Consulting (2005 – 2013) – Provided web and mobile application development services for clients in social networking, property management, travel, and educational fundraising. Delivered cross-platform iOS/Android educational apps and built scalable web applications.
+* Various Engineering & Leadership Roles (1998 – 2010) – Held software engineering and architecture roles at companies including JD Edwards, Frito Lay, and EDS, specializing in enterprise software, financial systems, and infrastructure development.
+EDUCATION
+Texas A&M University (Sept 1994 - May 1998)
 Bachelor of Science in Aerospace Engineering
-
-
-
-
-
-
-
-
-
-
+SKILLS
+Leadership & Strategy
+* Scaling High-Performing Teams: Built and led engineering organizations from startup to enterprise scale, implementing agile methodologies, pod-based structures, and a culture of accountability to drive high-impact product development.
+* Driving Business & Product Strategy: Developed and executed strategic roadmaps that aligned engineering efforts with business goals, improving operational efficiency, accelerating go-to-market timelines, and enhancing customer experience.
+* Cross-Functional Collaboration & Execution: Partnered with Product, Design, and Operations to optimize feature intake, technical debt reduction, and seamless cross-team execution, resulting in faster product releases and improved developer satisfaction.
+* Mentorship & Leadership Development: Created programs like Focus Fridays and Lunch & Learns, fostering continuous learning, innovation, and career growth for engineering teams, leading to higher retention and team engagement.
+* Hiring & Talent Development: Recruited, onboarded, and developed top engineering talent, cultivating leaders who drive scalable solutions, innovation, and strong engineering culture within their teams.
+Technical Expertise
+* Languages: Dart, JavaScript, Ruby, Java, Objective-C, C#, Python, Lua, SQL, UML
+* Mobile: Flutter, iOS, Android, Unity, Corona, Ionic, RubyMotion
+* Web: React, Ruby on Rails, jQuery, Angular, HTML, CSS, Tailwind
+* Java/J2EE: Android, Java, Spring
+* Databases: AWS DynamoDB, Postgres, MySQL, Redis, Memcache
+* OS & Cloud: AWS, Mac OS X, iOS, Android, Windows, Unix
