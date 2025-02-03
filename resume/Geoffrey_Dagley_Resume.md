@@ -25,7 +25,7 @@ Senior engineering executive with 25+ years of experience **building and scaling
 
 ##### Technical Leadership & System Improvements
 
-* **Proactively improved platform security and scalability** by conducting a **comprehensive infrastructure audit**, identifying and mitigating vulnerabilities before they could impact customers. This effort laid a **strong foundation for growth, operational resilience, and regulatory compliance.**  
+* **Proactively improved platform security and scalability** by conducting a **comprehensive infrastructure audit**, identifying and mitigating vulnerabilities before they could impact customers. This effort laid a **strong foundation for growth, operational resilience, and regulatory compliance**, and led to a project to **automate infrastructure management using Terraform**, ensuring **greater consistency, scalability, and reduced operational overhead**.
 * **Strengthened automated testing and observability systems** to **ensure deployment stability, prevent regressions, and proactively address performance issues.** By improving alerting and monitoring, the team was able to **reduce on-call disruptions, enhance engineering focus, and minimize customer downtime—directly improving reliability and user trust.**
 
 ##### Product & Delivery Excellence
