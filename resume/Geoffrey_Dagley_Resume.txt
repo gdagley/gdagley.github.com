@@ -4,7 +4,7 @@ Senior engineering executive with 25+ years of experience building and scaling h
 Team Leadership: Successfully scaled engineering organizations across startups and enterprises, implementing agile methodologies, cross-functional collaboration, and a strong engineering culture to accelerate product development, improve developer satisfaction, and optimize execution.
 Product Development: Led engineering efforts to bring cutting-edge digital products to market, contributing to 100+ patents in auto finance, e-commerce, data analytics, machine learning, and AR/XR. Expertise in translating business vision into scalable, high-impact technology solutions that enhance customer experience and drive competitive advantage.
 EXPERIENCE
-blockit (Feb 2024 - Present)
+blockit (Feb 2024 - Feb 2025)
 VP of Engineering
 Engineering Team Growth & Leadership
 * Scaled the engineering organization from 6 to 28 engineers, QA, and data professionals, forming 7 cross-functional teams covering product development, EMR integration, customer support, QA, and data. Implemented a pod-based team structure to empower teams with clear ownership, faster decision-making, and a culture of accountability.
@@ -21,7 +21,7 @@ Strategic Leadership & Stakeholder Engagement
 * Championed a culture of collaboration and operational excellence by breaking down silos between engineering, product, and operations. Led cross-functional initiatives to enhance team efficiency, create more transparent workflows, and elevate overall product quality—resulting in a more aligned and engaged engineering team.
 Capital One (July 2017 — Feb 2024)
 Director, Software Engineering, Credit Card (March 2023 — Feb 2024)
-* Led the convergence of multiple fraud detection decision engines into a unified platform, improving development efficiency, reducing operational complexity, and accelerating rule deployment.
+* Led the convergence of multiple fraud detection decision engines into a unified platform, with a goal of improving development efficiency, reducing operational complexity, and accelerating rule deployment.
 * Transformed four remote teams to proactively manage tech upgrades, security remediations, and microservices hygiene, resulting in lower operational costs and faster product deployments.
 Director, Software Engineering, Auto Finance (Feb 2022 — March 2023)
 * Expanded Capital One’s auto financing footprint to 6000+ dealerships by integrating financing tools into dealer websites using independently deployable micro frontends.

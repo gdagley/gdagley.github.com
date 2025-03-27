@@ -10,7 +10,7 @@ Senior engineering executive with 25+ years of experience **building and scaling
 
 ## **EXPERIENCE**
 
-### **blockit (Feb 2024 \- Present)**
+### **blockit (Feb 2024 \- Feb 2025\)**
 
 #### *VP of Engineering*
 
@@ -25,7 +25,7 @@ Senior engineering executive with 25+ years of experience **building and scaling
 
 ##### Technical Leadership & System Improvements
 
-* **Proactively improved platform security and scalability** by conducting a **comprehensive infrastructure audit**, identifying and mitigating vulnerabilities before they could impact customers. This effort laid a **strong foundation for growth, operational resilience, and regulatory compliance**, and led to a project to **automate infrastructure management using Terraform**, ensuring **greater consistency, scalability, and reduced operational overhead**.
+* **Proactively improved platform security and scalability** by conducting a **comprehensive infrastructure audit**, identifying and mitigating vulnerabilities before they could impact customers. This effort laid a **strong foundation for growth, operational resilience, and regulatory compliance**, and led to a project to **automate infrastructure management using Terraform**, ensuring **greater consistency, scalability, and reduced operational overhead**.  
 * **Strengthened automated testing and observability systems** to **ensure deployment stability, prevent regressions, and proactively address performance issues.** By improving alerting and monitoring, the team was able to **reduce on-call disruptions, enhance engineering focus, and minimize customer downtime—directly improving reliability and user trust.**
 
 ##### Product & Delivery Excellence
@@ -41,7 +41,7 @@ Senior engineering executive with 25+ years of experience **building and scaling
 
 #### *Director, Software Engineering, Credit Card (March 2023 — Feb 2024\)*
 
-* **Led the convergence** of multiple **fraud detection decision engines** into a unified platform, improving **development efficiency, reducing operational complexity, and accelerating rule deployment.**  
+* **Led the convergence** of multiple **fraud detection decision engines** into a unified platform, with a goal of improving **development efficiency, reducing operational complexity, and accelerating rule deployment.**  
 * **Transformed four remote teams** to proactively manage **tech upgrades, security remediations, and microservices hygiene,** resulting in **lower operational costs and faster product deployments.**
 
 #### *Director, Software Engineering, Auto Finance (Feb 2022 — March 2023\)*
