@@ -10,7 +10,7 @@ Senior engineering executive with 25+ years of experience **building and scaling
 
 ## **EXPERIENCE**
 
-### **blockit (Feb 2024 \- Feb 2025\)**
+### **blockit (Mar 2024 \- Jan 2025\)**
 
 #### *VP of Engineering*
 
