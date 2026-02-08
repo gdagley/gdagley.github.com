@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <base href="/getting_dicey/">
+  <title>Getting Dicey — Simple Dice for Any Game</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .screenshots::-webkit-scrollbar { display: none; }
+    .screenshots { -ms-overflow-style: none; scrollbar-width: none; }
+  </style>
+</head>
+<body class="bg-gray-950 text-white">
+
+  <!-- Hero -->
+  <section class="flex flex-col items-center justify-center px-6 pt-20 pb-16 text-center">
+    <img src="icon.png" alt="Getting Dicey icon" class="w-28 h-28 rounded-[22%] shadow-lg mb-6">
+    <h1 class="text-5xl font-bold tracking-tight mb-3">Getting Dicey</h1>
+    <p class="text-xl text-gray-400 mb-8">Simple Dice for Any Game</p>
+    <div class="flex flex-wrap gap-4 justify-center">
+      <a href="#" class="inline-flex items-center gap-2 bg-white text-black font-semibold px-6 py-3 rounded-xl hover:bg-gray-200 transition">
+        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+        App Store
+      </a>
+      <a href="#" class="inline-flex items-center gap-2 bg-white text-black font-semibold px-6 py-3 rounded-xl hover:bg-gray-200 transition">
+        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-1.38l2.5 1.449c.5.29.5.99 0 1.28l-2.208 1.28-2.535-2.536 2.243-2.472zM5.864 2.658L16.8 8.99l-2.302 2.302-8.634-8.634z"/></svg>
+        Google Play
+      </a>
+    </div>
+  </section>
+
+  <!-- Screenshots -->
+  <section class="px-6 pb-16">
+    <div class="screenshots flex gap-6 overflow-x-auto pb-4 snap-x snap-mandatory justify-start md:justify-center">
+      <img src="screenshots/showcase.png" alt="Showcase" class="snap-center h-[500px] rounded-2xl shadow-lg flex-shrink-0">
+      <img src="screenshots/critical_hit.png" alt="Critical Hit" class="snap-center h-[500px] rounded-2xl shadow-lg flex-shrink-0">
+      <img src="screenshots/dark_mode.png" alt="Dark Mode" class="snap-center h-[500px] rounded-2xl shadow-lg flex-shrink-0">
+      <img src="screenshots/dice_sum.png" alt="Dice Sum" class="snap-center h-[500px] rounded-2xl shadow-lg flex-shrink-0">
+      <img src="screenshots/die_settings.png" alt="Die Settings" class="snap-center h-[500px] rounded-2xl shadow-lg flex-shrink-0">
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="max-w-4xl mx-auto px-6 pb-20">
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+      <div class="bg-gray-900 rounded-2xl p-6">
+        <div class="text-3xl mb-3">🎲</div>
+        <h3 class="text-lg font-semibold mb-2">Roll Any Die</h3>
+        <p class="text-gray-400">From d4 to d20, roll up to 16 dice at once. Perfect for any tabletop game.</p>
+      </div>
+      <div class="bg-gray-900 rounded-2xl p-6">
+        <div class="text-3xl mb-3">🎨</div>
+        <h3 class="text-lg font-semibold mb-2">Customize Your Dice</h3>
+        <p class="text-gray-400">Pick colors, add labels, and set modifiers to match your character sheet.</p>
+      </div>
+      <div class="bg-gray-900 rounded-2xl p-6">
+        <div class="text-3xl mb-3">📊</div>
+        <h3 class="text-lg font-semibold mb-2">Track Your Rolls</h3>
+        <p class="text-gray-400">See sums, use counters, and undo rolls. Never lose track of your game.</p>
+      </div>
+      <div class="bg-gray-900 rounded-2xl p-6">
+        <div class="text-3xl mb-3">🔒</div>
+        <h3 class="text-lg font-semibold mb-2">Privacy First</h3>
+        <p class="text-gray-400">No account needed. No ads. Works completely offline. Your data stays on your device.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-gray-800 py-8 text-center text-gray-500 text-sm">
+    <a href="mailto:support@gettingdicey.com" class="hover:text-gray-300 transition">Support</a>
+    <span class="mx-2">&middot;</span>
+    <a href="privacy-policy.html" class="hover:text-gray-300 transition">Privacy Policy</a>
+    <span class="mx-2">&middot;</span>
+    <span>&copy; 2025 Getting Dicey</span>
+  </footer>
+
+</body>
+</html>
