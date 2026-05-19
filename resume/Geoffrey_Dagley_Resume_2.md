@@ -1,12 +1,12 @@
 # **Geoffrey Dagley**
 
-### ***Cloud Engineering Leader | Passionate Technologist | Innovative Builder***
+# ***CTO & Co-founder | AI Platform Builder | Cloud Engineering Leader***
 
 gdagley@gmail.com | 469-742-1130 | [geoffreydagley.com](https://geoffreydagley.com/) | [linkedin.com/in/gdagley](https://www.linkedin.com/in/gdagley)
 
 ## **Summary**
 
-Building and scaling **cloud‑native, serverless, microservice, and microfrontend** platforms. Known for turning big ideas, **100+ patents**,  into secure, **data-driven** products that delight millions of users. Recruits and mentors high‑performing teams, drives innovation, and aligns technology with business strategy to accelerate growth.
+Currently **CTO and co-founder** of Codenta, an AI revenue-intelligence platform for dental practices, where I lead engineering, AI, and cloud infrastructure from founding through commercial launch.  Building and scaling **cloud‑native, serverless, microservice, and microfrontend** platforms. Known for turning big ideas, **100+ patents**,  into secure, **data-driven** products that delight millions of users. Recruits and mentors high‑performing teams, drives innovation, and aligns technology with business strategy to accelerate growth.
 
 ### **Leadership & Strategy**
 
@@ -34,6 +34,22 @@ Building and scaling **cloud‑native, serverless, microservice, and microfronte
 
 ## **Experience**
 
+### **Codenta**
+
+Remote  
+***CTO & Co-founder*** **– AI Revenue Intelligence for Dental Practices**  
+*Jan 2024 – Present*
+
+Co-founded and lead engineering at Codenta, an AI platform that reads clinical notes from practice management software, identifies unbilled procedures and documentation gaps, and writes corrections back to the source system.
+
+* Took the product from a solo proof of concept (Jan 2024\) through engineering team build-out (late 2025\) to a live commercial platform (Apr 2026), now processing thousands of patient visits and generating tens of thousands of revenue and compliance findings for dental clinicians.  
+* Architected an end-to-end AI pipeline that turns unstructured clinical notes into structured, billable, audit-ready findings, combining large-language-model extraction with deterministic rule logic so every recommendation is explainable and defensible to the practice.  
+* Delivered direct integrations with the three leading dental practice management systems (Eaglesoft, OpenDental, Dentrix Ascend), including bidirectional writeback that updates clinical and billing records inside the systems dentists already use.  
+* Built a versioned prompt-management system that treats AI prompts as first-class production code — enabling continuous tuning, fast iteration with the data-science team, and auditable cost tracking on every model call.  
+* Scaled the engineering organization from a solo founding effort to a multi-disciplinary team across late 2025, establishing a near-daily production release cadence and a 2-day median ticket-to-merge cycle that lets the company incorporate live customer feedback into the product within days.  
+* Stood up the production cloud platform on AWS from scratch, serverless, cost-optimized, and designed for horizontal scale to additional customers without re-architecture.  
+* Set the engineering culture from day one: AI-native development workflow, written incident postmortems, fast onboarding via a documentation-rich codebase, and tight cross-functional collaboration with the data-science and clinical operations teams.
+
 ### **Blockit**
 
 McKinney, TX
@@ -48,8 +64,6 @@ McKinney, TX
 * Ran a full **security & scalability audit**, and began migrating infrastructure to **Terraform IaC**, removing **critical CVEs, ensuring compliance,**  and reducing deployment effort in the process.  
 * Expanded automated tests and observability, slashing **P1 incidents** and reducing after‑hours pages, restoring team focus.  
 * Partnered with Product & Ops to harden QA gates, driving **significantly fewer production bugs** and increasing ability to ship faster.
-
-### 
 
 ### **Capital One**
 
