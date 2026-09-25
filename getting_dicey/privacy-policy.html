@@ -13,7 +13,7 @@
     <a href="index.html" class="text-gray-500 hover:text-gray-300 transition text-sm">&larr; Back</a>
 
     <h1 class="text-4xl font-bold text-white mt-6 mb-2">Privacy Policy</h1>
-    <p class="text-gray-500 mb-10">Last updated: February 7, 2026</p>
+    <p class="text-gray-500 mb-10">Last updated: September 23, 2026</p>
 
     <section class="space-y-8 leading-relaxed">
       <div>
@@ -30,22 +30,64 @@
           <li>No cookies or advertising identifiers are used</li>
           <li>No account or registration is required</li>
         </ul>
-        <p class="mt-2">Analytics are powered by <a href="https://plausible.io/" class="text-white underline hover:text-gray-300 transition">Plausible</a>, a privacy-focused analytics platform. You can <strong class="text-white">opt out</strong> at any time in <strong class="text-white">Settings &gt; Privacy &gt; Anonymous Analytics</strong>.</p>
+        <p class="mt-2">Analytics are powered by <a href="https://plausible.io/" class="text-white underline hover:text-gray-300 transition">Plausible</a>, a privacy-focused analytics platform. You can <strong class="text-white">opt out</strong> at any time in <strong class="text-white">Settings &gt; About &gt; Privacy &gt; Anonymous Analytics</strong>.</p>
+      </div>
+
+      <div>
+        <h2 class="text-xl font-semibold text-white mb-2">Advertising</h2>
+        <p>Getting Dicey displays <strong class="text-white">banner and interstitial ads</strong> to free users via <a href="https://policies.google.com/privacy" class="text-white underline hover:text-gray-300 transition">Google AdMob</a>. Specifically:</p>
+        <ul class="list-disc list-inside mt-2 space-y-1">
+          <li>AdMob collects the device advertising identifier (IDFA on iOS if ATT consent is granted, GAID on Android) for ad serving</li>
+          <li>Ad interaction data (impressions, taps) is collected by Google</li>
+          <li>Where the law requires it, such as in the European Economic Area and the United Kingdom, the app shows Google's consent form before any ads load, so you can choose how your data is used for ads. You can change these choices at any time while you see ads, in Settings &gt; About &gt; Privacy &gt; Ad Privacy Choices</li>
+          <li>On iOS, the app then asks for App Tracking Transparency (ATT) permission when it starts, before the advertising identifier is used. If you decline, ads are not personalized. You can change this at any time in your device's Settings</li>
+          <li>Users who have purchased Remove Ads or Pro are never asked, because they see no ads</li>
+          <li>Ads are removed entirely when you purchase the Remove Ads or Pro upgrade</li>
+        </ul>
+        <p class="mt-2">For more information, see <a href="https://policies.google.com/privacy" class="text-white underline hover:text-gray-300 transition">Google's Privacy Policy</a>.</p>
+      </div>
+
+      <div>
+        <h2 class="text-xl font-semibold text-white mb-2">In-App Purchases</h2>
+        <p>Getting Dicey offers in-app purchases (Remove Ads, Pro and a Tip Jar) to enhance your experience. All transactions are handled entirely by the <strong class="text-white">Apple App Store</strong> or <strong class="text-white">Google Play Store</strong>. Specifically:</p>
+        <ul class="list-disc list-inside mt-2 space-y-1">
+          <li>The app does not access or store any payment information</li>
+          <li>Purchase state (whether you have purchased an upgrade) is stored locally on your device via SharedPreferences</li>
+          <li>Purchase verification is done against store receipts — no data is sent to our servers</li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="text-xl font-semibold text-white mb-2">Cloud Sync</h2>
+        <p>For Pro users, <strong class="text-white">cloud sync</strong> keeps dice bag data the same across devices. On iOS it syncs through your own iCloud account. On Android it syncs through your own Google Drive once you sign in with Google.</p>
+        <ul class="list-disc list-inside mt-2 space-y-1">
+          <li><strong class="text-white">iOS</strong>: Dice bag data syncs via <a href="https://www.apple.com/legal/privacy/" class="text-white underline hover:text-gray-300 transition">iCloud</a></li>
+          <li><strong class="text-white">Android</strong>: Dice bag data syncs via <a href="https://policies.google.com/privacy" class="text-white underline hover:text-gray-300 transition">Google Drive</a>, which requires Google Sign-In authentication</li>
+          <li>Data synced includes dice bag configurations (names, dice setups, and timestamps)</li>
+          <li>No data is sent to Getting Dicey servers — sync goes directly to your own iCloud or Google Drive account</li>
+        </ul>
       </div>
 
       <div>
         <h2 class="text-xl font-semibold text-white mb-2">Data Storage</h2>
-        <p>Your settings and preferences are stored locally on your device using standard platform storage. This data never leaves your device and is not accessible to us or any third party.</p>
+        <p>Your settings, preferences, and purchase state are stored locally on your device using standard platform storage (SharedPreferences). This data is not accessible to us or any third party. Pro users who enable cloud sync will also have their dice bag data stored in their own iCloud or Google Drive account — see the Cloud Sync section above for details.</p>
       </div>
 
       <div>
         <h2 class="text-xl font-semibold text-white mb-2">Third-Party Services</h2>
-        <p>Getting Dicey uses a self-hosted <a href="https://plausible.io/" class="text-white underline hover:text-gray-300 transition">Plausible Analytics</a> instance for anonymous usage analytics. No other third-party services, SDKs, or APIs are integrated. The app functions offline — analytics events are sent only when a network connection is available.</p>
+        <p>Getting Dicey uses the following third-party services:</p>
+        <ul class="list-disc list-inside mt-2 space-y-1">
+          <li><a href="https://plausible.io/" class="text-white underline hover:text-gray-300 transition">Plausible Analytics</a> — self-hosted instance for anonymous usage analytics. No personal data is collected. Analytics events are sent only when a network connection is available.</li>
+          <li><a href="https://policies.google.com/privacy" class="text-white underline hover:text-gray-300 transition">Google AdMob</a> — ad serving for free users. Collects device advertising identifier and ad interaction data. See the Advertising section above for details.</li>
+          <li><a href="https://policies.google.com/privacy" class="text-white underline hover:text-gray-300 transition">Google Sign-In</a> — used for Google Drive authentication on Android. See Google's privacy policy for details.</li>
+          <li><a href="https://www.apple.com/legal/privacy/" class="text-white underline hover:text-gray-300 transition">iCloud</a> — used for cloud sync on iOS for Pro users.</li>
+          <li><a href="https://policies.google.com/privacy" class="text-white underline hover:text-gray-300 transition">Google Drive</a> — used for cloud sync on Android for Pro users.</li>
+        </ul>
       </div>
 
       <div>
         <h2 class="text-xl font-semibold text-white mb-2">Children's Privacy</h2>
-        <p>Getting Dicey does not collect any personal data or device identifiers, making it safe for users of all ages. Anonymous analytics can be disabled in settings.</p>
+        <p>Getting Dicey does not target children and is not designed for use by children under 13. While AdMob is present for ad serving, the app does not use COPPA-restricted ad settings. Anonymous analytics can be disabled in settings.</p>
       </div>
 
       <div>
